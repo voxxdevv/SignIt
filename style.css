@@ -151,6 +151,10 @@ input:disabled {
 	 background-color: rgba(0, 0, 0, 0.1);
 }
 
+input:placeholder {
+    color: #aaa;
+}
+
 /* Button Styles */
 button {
     display: inline-block;
