@@ -1,8 +1,8 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif; /* Modern font */
-    background: linear-gradient(320deg, #4b0082, #6a5acd); /* Gradient background */
-    color: #ffffff; /* Light text color for contrast */
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(320deg, #4b0082, #6a5acd);
+    color: #ffffff;
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,8 +11,8 @@ body {
     justify-content: center;
     min-height: 100vh;
     text-align: center;
-    overflow: auto; /* Prevent overflow if needed */
-    animation: fadeIn 1.3s ease forwards; /* Fade-in effect */
+    overflow: auto;
+    animation: fadeIn 1.3s ease forwards;
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
@@ -22,205 +22,230 @@ body {
 hr {
     width: 90%;
     border-top: none;
-    border: 1px solid #4b0082; /* Purple border */
-    border-radius: 100px; /* Rounded corners for a softer look */
-    margin: 0 auto; /* Consistent margin around the hr */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
+    border: 1px solid #4b0082;
+    border-radius: 100px;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    transform: scaleX(0); /* Start with scale 0 on the X-axis */
+    animation: revealIn 1.5s ease forwards;
+    transform-origin: center; /* Ensures the animation expands from the center */
 }
 
 /* Link styles */
 a {
-    display: inline-block; /* Change to inline-block or block */
+    display: inline-block;
     font-size: 75%;
     text-transform: uppercase;
-    background: linear-gradient(-95deg, #4b0082, #6a5acd); /* Gradient background */
+    background: linear-gradient(-95deg, #4b0082, #6a5acd);
     color: #ffffff;
     border: none;
     font-weight: bold;
-    border-radius: 100px; /* Rounded corners */
+    border-radius: 100px;
     text-decoration: none;
     padding: 0 5px;
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Soft shadow */    
-    transition: background 0.3s ease, transform 0.3s ease; /* Add transition for hover effects */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, background 0.3s ease, filter 0.3s ease; /* Hover transitions */
+
 }
 
 a:hover {
-    background: linear-gradient(350deg, #4b0082, #6a5acd); /* Gradient background */
+    background: linear-gradient(350deg, #4b0082, #6a5acd);
     text-decoration: underline;
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05);
+    filter: brightness(1.1);
 }
 
+/* Header Styles */
 header {
-    background: #4b0082; /* Purple background */
+    background: #4b0082;
     width: 100%;
     padding: 15px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0px;
+    margin: 0 auto;
     text-align: center;
+    animation: slideDown 1s ease forwards;
+}
+
+/* Logo Styles */
+.logo {
+    width: 55px;
+    margin-right: 0px;
+    animation: rotateIn 1.5s ease forwards;
 }
 
 .header-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px; /* Space between logo and name */
-}
-
-.logo {
-    width: 55px; /* Adjust size as needed */
-    margin-right: 0px;
+    gap: 15px;
 }
 
 .name {
     font-size: 2.5rem;
     margin: 0;
-    margin-left: 0px;
+    animation: fadeIn 1.2s ease forwards;
 }
 
 .description {
     margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
     font-size: 1rem;
     margin-bottom: 0px;
+    animation: fadeIn 1.5s ease forwards;
 }
 
 /* Main Styles */
 main {
+    margin: 0 auto;
     padding: 15px;
+    animation: slideIn 1.2s ease forwards;
 }
 
 .info {
     font-size: 1rem;
     margin-top: 0px;
     margin-bottom: 0px;
-    color: #aaa; /* Light grey for informational text */
+    color: #aaa;
+    animation: fadeIn 1.3s ease forwards;
 }
 
 /* Title Styles */
-h1 {
-    font-size: 2.5rem;
+h1, h3, h4, h5, h6, p {
+    opacity: 0;
+    animation: fadeIn 1.4s ease forwards;
 }
 
-h3 {
-    font-size: 1.75rem;
-}
-
-h4 {
-    font-size: 1.5rem;
-}
-
-h5 {
-    font-size: 1.25rem;
-}
-
-h6 {
-    font-size: 1rem;
-}
-
-p {
-    font-size: 1rem;
-}
+h1 { font-size: 2.5rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+p { font-size: 1rem; }
 
 /* Input Styles */
 input {
-    margin-top: 0px;
-    padding: 15px;
     margin: 0px;
+    padding: 15px;
     font-size: 1.25rem;
-    border: 2px solid #4b0082; /* Purple border */
-    border-radius: 100px; /* Rounded corners for a softer look */
-    width: 90%; /* Wider input */
+    border: 2px solid #4b0082;
+    border-radius: 100px;
+    width: 90%;
     transition: all 0.3s ease;
     background-color: rgba(255, 255, 255, 0.1);
-    color: #ffffff; /* Light text color */
-    backdrop-filter: blur(10px); /* Blur effect for background */
+    color: #ffffff;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1.2s ease forwards;
 }
 
 input:focus {
     outline: none;
-    border-color: #00c9ff; /* Change border color on focus */
-    box-shadow: 0 0 10px #00c9ff; /* Glow effect */
+    border-color: #00c9ff;
+    box-shadow: 0 0 10px #00c9ff;
+}
+
+input:disabled {
+    color: #aaa;
+	 background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Button Styles */
 button {
     display: inline-block;
-    background: linear-gradient(90deg, #4b0082, #6a5acd); /* Gradient background */
+    background: linear-gradient(90deg, #4b0082, #6a5acd);
     color: #ffffff;
     border: none;
-    border-radius: 100px; /* Rounded corners */
-    padding: 15px 20px; /* Slightly narrower padding */
+    border-radius: 100px;
+    padding: 15px 20px;
     font-size: 1.25rem;
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease, filter 0.3s ease;
     width: 65%;
     margin-top: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 button:hover {
     transform: scale(1.05);
-    filter: brightness(1.1); /* Slightly brighten button on hover */
+    filter: brightness(1.1);
 }
 
 /* Section Styles */
 #installLinkSection {
     margin-top: 30px;
-    animation: slideIn 1s ease forwards; /* Slide-in animation for the section */
+    animation: slideIn 1s ease forwards;
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
-    background: #4b0082; /* Purple background */
+    background: #4b0082;
     margin: 0 auto;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    padding: 15px;
+    padding: 15px 0;
     margin-top: auto;
     font-size: 1rem;
-    padding: 15px 0;
-    align-items: center; /* Center vertically */
-    -moz-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
+    animation: slideUp 1.5s ease forwards;
 }
 
+.foottxt {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
 /* Animations */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 @keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes revealIn {
     from {
-        transform: translateY(20px);
         opacity: 0;
+        transform: scaleX(0);
     }
     to {
-        transform: translateY(0);
         opacity: 1;
+        transform: scaleX(1); /* Expand to full width */
     }
+}
+
+@keyframes rotateIn {
+    from { transform: rotate(-180deg); opacity: 0; }
+    to { transform: rotate(0deg); opacity: 1; }
+}
+
+@keyframes popIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2rem; /* Responsive title size */
-    }
-
-    input {
-        width: 80%; /* Responsive input width */
-    }
-
-    button {
-        width: 80%; /* Full-width button on small screens */
-    }
+    h1 { font-size: 2rem; }
+    input { width: 80%; }
+    button { width: 80%; }
 }
