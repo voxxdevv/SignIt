@@ -46,11 +46,14 @@ a {
     /* Margin properties for top and bottom */
     margin-top: 0px !important;  /* Use !important to override */
     margin-bottom: 0px !important;  /* Use !important to override */
+    
+    transition: background 0.3s ease, transform 0.3s ease; /* Add transition for hover effects */
 }
 
 a:hover {
     background: linear-gradient(350deg, #4b0082, #6a5acd); /* Gradient background */
     text-decoration: underline;
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 header {
