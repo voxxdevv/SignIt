@@ -39,14 +39,9 @@ a {
     font-weight: bold;
     border-radius: 100px; /* Rounded corners */
     text-decoration: none;
-    padding: 5px;
+    padding: 0 5px;
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Soft shadow */
-    
-    /* Margin properties for top and bottom */
-    margin-top: 0px !important;  /* Use !important to override */
-    margin-bottom: 0px !important;  /* Use !important to override */
-    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Soft shadow */    
     transition: background 0.3s ease, transform 0.3s ease; /* Add transition for hover effects */
 }
 
