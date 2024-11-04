@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, content="width=device-width, initial-scale=1.0">
+    <title>SignIt • IPA Signer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7eb79cf2e3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header style="margin-bottom: 0px">
+    <div class="header-content">
+<img class="logo" src="src/whitelogo.png">
+        <h1 class="name">SignIt</i></h1>
+</div>
+    <p class="description">An IPA signer crafted by <a href="https://voxxdevv.github.io/lmdesigns">Loud Monkey Designs <i class="fa-solid fa-link"></i></a>. <i class="fa-solid fa-hammer"></i></p>
+    </header>
+    <main>
+        <section style="margin-top: 0px; margin-bottom: 0px;">
+            <h2 style="margin-top: auto; margin-bottom: 15px;">Link To Your IPA File & Certificate Information <i class="fa-solid fa-circle-chevron-down"></i></h2>
+<hr style="width: 10%; margin: 0 auto;">
+<input style="margin-top: 15px;margin-bottom: 15px;" type="text" id="urlInput" placeholder="Enter IPA file link here...">
+<input style="margin-top: 0px;margin-bottom: 0px;" type="text" id="certp12Input" placeholder="Enter P12 file link here...">
+<input style="margin-top: 15px;margin-bottom: 15px;" type="text" id="certpassInput" placeholder="Enter certificate password here...">
+<input style="margin-top: 0px;margin-bottom: 15px;" type="text" id="mobileprovisionInput" placeholder="Enter provisioning file link here...">
+
+            <button id="generateLinkButton" style="margin-top: 0px"; margin-bottom:0px;">Sign IPA File <i class="fa-solid fa-file-pen"></i></button>
+
+<p class="info" style="margin-top:15px; margin-bottom: 0px;">Your IPA file will be signed via <b>CocoCloud</b>. For resources, check out <a href="https://apps.nabzclan.vip">Nabzclans's Catalog of IPA Files <i class="fa-solid fa-link"></i></a>, and <a href="https://nabzclan.vip/resources/?prefix_id=19">Nabzclan's Catalog of Revoked Certificates <i class="fa-solid fa-link"></i></a>. <i class="fa-solid fa-circle-info"></i></p>
+        </section>
+
+        <section id="installLinkSection" style="display: none;margin-top: 0px;">
+<hr style="margin-bottom: 15px; margin-top: 15px;">
+            <h2 style="margin-bottom: 15px; margin-top: 0px;">Install Signed IPA File <i class="fa-solid fa-circle-chevron-down"></i></h2>	
+<hr style="width: 10%; margin: 0 auto;">
+            <p style="margin-top:15px;margin-bottom:0px;"id="linkOutput"></p>
+
+<button onclick="copyLink()" style="margin-top: 15px; margin-bottom: 0px;">Copy Installation Link <i class="fa-solid fa-copy"></i></button>
+
+    <button id="installButton">Install (Direct) <i class="fa-solid fa-download"></i></button>
+
+<p style="margin-bottom: 0px; margin-top: 0px;"></p>
+           
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script>, <b>SignIt</b>. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  
+</div>
+</body>
+</html>

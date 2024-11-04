@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    background: linear-gradient(320deg, #4b0082, #6a5acd); /* Gradient background */
+    color: #ffffff; /* Light text color for contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    overflow: auto; /* Prevent overflow if needed */
+    animation: fadeIn 1.3s ease forwards; /* Fade-in effect */
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* Styled Horizontal Rule */
+hr {
+    width: 90%;
+    border-top: none;
+    border: 1px solid #4b0082; /* Purple border */
+    border-radius: 100px; /* Rounded corners for a softer look */
+    margin: 0 auto; /* Consistent margin around the hr */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
+}
+
+/* Link styles */
+a {
+    display: inline-block; /* Change to inline-block or block */
+    font-size: 75%;
+    text-transform: uppercase;
+    background: linear-gradient(-95deg, #4b0082, #6a5acd); /* Gradient background */
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+    border-radius: 100px; /* Rounded corners */
+    text-decoration: none;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    
+    /* Margin properties for top and bottom */
+    margin-top: 0px !important;  /* Use !important to override */
+    margin-bottom: 0px !important;  /* Use !important to override */
+}
+
+a:hover {
+    background: linear-gradient(350deg, #4b0082, #6a5acd); /* Gradient background */
+    text-decoration: underline;
+}
+
+header {
+    background: #4b0082; /* Purple background */
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Space between logo and name */
+}
+
+.logo {
+    width: 55px; /* Adjust size as needed */
+    margin-right: 0px;
+}
+
+.name {
+    font-size: 2.5rem;
+    margin: 0;
+    margin-left: 0px;
+}
+
+.description {
+    margin-top: 15px;
+    font-size: 1rem;
+    margin-bottom: 0px;
+}
+
+/* Main Styles */
+main {
+    padding: 15px;
+}
+
+.info {
+    font-size: 1rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #aaa; /* Light grey for informational text */
+}
+
+/* Title Styles */
+h1 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Input Styles */
+input {
+    margin-top: 0px;
+    padding: 15px;
+    margin: 0px;
+    font-size: 1.25rem;
+    border: 2px solid #4b0082; /* Purple border */
+    border-radius: 100px; /* Rounded corners for a softer look */
+    width: 90%; /* Wider input */
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff; /* Light text color */
+    backdrop-filter: blur(10px); /* Blur effect for background */
+}
+
+input:focus {
+    outline: none;
+    border-color: #00c9ff; /* Change border color on focus */
+    box-shadow: 0 0 10px #00c9ff; /* Glow effect */
+}
+
+/* Button Styles */
+button {
+    display: inline-block;
+    background: linear-gradient(90deg, #4b0082, #6a5acd); /* Gradient background */
+    color: #ffffff;
+    border: none;
+    border-radius: 100px; /* Rounded corners */
+    padding: 15px 20px; /* Slightly narrower padding */
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease, filter 0.3s ease;
+    width: 65%;
+    margin-top: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Soft shadow */
+}
+
+button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1); /* Slightly brighten button on hover */
+}
+
+/* Section Styles */
+#installLinkSection {
+    margin-top: 30px;
+    animation: slideIn 1s ease forwards; /* Slide-in animation for the section */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background: #4b0082; /* Purple background */
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    margin-top: auto;
+    font-size: 1rem;
+    padding: 15px 0;
+    align-items: center; /* Center vertically */
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Responsive title size */
+    }
+
+    input {
+        width: 80%; /* Responsive input width */
+    }
+
+    button {
+        width: 80%; /* Full-width button on small screens */
+    }
+}
