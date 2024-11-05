@@ -22,13 +22,15 @@ document.getElementById('installButton').addEventListener('click', function() {
             <key>IgnoreManifestScope</key>
             <false/>
             <key>IsRemovable</key>
-            <true/>
+            <false/>
             <key>Label</key>
             <string>SignIt</string>
             <key>Precomposed</key>
             <false/>
             <key>URL</key>
             <string>https://usesignit.netlify.app/internaldisplay.html</string>
+            <key>Icon</key>
+            <string>https://raw.githubusercontent.com/voxxdevv/SignIt/refs/heads/main/ico/apple-touch-icon.png</string> <!-- Replace with your icon URL -->
             <key>PayloadIdentifier</key>
             <string>com.signit.app</string>
             <key>PayloadType</key>
