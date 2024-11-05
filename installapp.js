@@ -23,21 +23,21 @@ document.getElementById('installButton').addEventListener('click', function() {
             <key>IgnoreManifestScope</key>
             <false/>
             <key>IsRemovable</key>
-            <false/>
-            <key>Precomposed</key>
-            <false/>
+            <true/>
             <key>Label</key>
             <string>SignIt</string>
             <key>Precomposed</key>
             <false/>
             <key>URL</key>
             <string>https://usesignit.netlify.app/internaldisplay.html</string>
+            <key>Icon</key>
+            <string>https://raw.githubusercontent.com/voxxdevv/SignIt/refs/heads/main/ico/apple-touch-icon.png</string>
             <key>PayloadIdentifier</key>
             <string>com.signit.app</string>
             <key>PayloadType</key>
-        <string>com.apple.webClip.managed</string>
+            <string>com.apple.webClip.managed</string>
             <key>PayloadUUID</key>
-            <string>${payloadUUID}</string> <!-- Insert generated payload UUID -->
+            <string>${payloadUUID}</string>
             <key>PayloadVersion</key>
             <integer>1</integer>
         </dict>
@@ -45,11 +45,11 @@ document.getElementById('installButton').addEventListener('click', function() {
     <key>PayloadDisplayName</key>
     <string>SignIt iOS App</string>
     <key>PayloadIdentifier</key>
-    <string>com.signit.app</string>
+    <string>com.example.signitprofile</string>
     <key>PayloadType</key>
     <string>Configuration</string>
-    <key>PayloadUUID</key>
-    <string>${profileUUID}</string> <!-- Insert generated profile UUID -->
+    <key>${profileUUID}</key>
+    <string>another-unique-uuid</string>
     <key>PayloadVersion</key>
     <integer>1</integer>
     <key>PayloadDescription</key>
