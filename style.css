@@ -205,7 +205,7 @@ footer {
     margin-bottom: 0px;
 }
 
-.instructions {
+#instructions {
     animation: slideIn 1s ease forwards;
 }
 /* Animations */
