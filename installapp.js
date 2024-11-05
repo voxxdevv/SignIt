@@ -28,7 +28,7 @@ document.getElementById('installButton').addEventListener('click', function() {
                 <key>Precomposed</key>
                 <false/>
                 <key>URL</key>
-                <string>https://usesignit.netlify.app/int</string>
+                <string>https://usesignit.netlify.app/internaldisplay.html</string>
                 <key>PayloadIdentifier</key>
                 <string>com.signit.webclip</string>
                 <key>PayloadType</key>
