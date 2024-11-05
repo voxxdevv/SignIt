@@ -23,7 +23,7 @@ document.getElementById('installButton').addEventListener('click', function() {
             <key>IgnoreManifestScope</key>
             <false/>
             <key>IsRemovable</key>
-            <true/>
+            <false/>
             <key>Label</key>
             <string>SignIt</string>
             <key>Precomposed</key>
