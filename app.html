@@ -8,6 +8,7 @@
 <body>
     <h1>Install SignIt Web Clip</h1>
     <button id="installButton">Install SignIt Web Clip</button>
+    <p id="instructions" style="display:none; color: green;">Profile downloaded! Please check your Settings app under "VPN & Device Management" to install.</p>
 
     <script>
         function generateUUID() {
@@ -79,6 +80,9 @@
             a.click();
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
+
+            // Show installation instructions
+            document.getElementById('instructions').style.display = 'block';
         });
     </script>
 </body>
