@@ -48,8 +48,8 @@ document.getElementById('installButton').addEventListener('click', function() {
     <string>com.example.signitprofile</string>
     <key>PayloadType</key>
     <string>Configuration</string>
-    <key>${profileUUID}</key>
-    <string>another-unique-uuid</string>
+    <key>PayloadUUID</key>
+    <string>${profileUUID}</string>
     <key>PayloadVersion</key>
     <integer>1</integer>
     <key>PayloadDescription</key>
