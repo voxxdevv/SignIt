@@ -7,9 +7,10 @@ function generateUUID() {
 }
 
 document.getElementById('installButton').addEventListener('click', function() {
-    const payloadUUID = generateUUID();
-    const profileUUID = generateUUID();
+    const payloadUUID = generateUUID(); // Generate a unique UUID for the payload
+    const profileUUID = generateUUID(); // Generate a unique UUID for the profile
 
+    // Create the plist content with dynamic UUIDs
     const plistContent = `<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -22,7 +23,7 @@ document.getElementById('installButton').addEventListener('click', function() {
             <key>IgnoreManifestScope</key>
             <false/>
             <key>IsRemovable</key>
-            <false/>
+            <true/>
             <key>Label</key>
             <string>SignIt</string>
             <key>Precomposed</key>
@@ -36,7 +37,7 @@ document.getElementById('installButton').addEventListener('click', function() {
             <key>PayloadType</key>
             <string>com.apple.webClip.managed</string>
             <key>PayloadUUID</key>
-            <string>your-unique-uuid</string>
+            <string>${payloadUUID}</string> <!-- Insert generated payload UUID -->
             <key>PayloadVersion</key>
             <integer>1</integer>
         </dict>
@@ -48,7 +49,7 @@ document.getElementById('installButton').addEventListener('click', function() {
     <key>PayloadType</key>
     <string>Configuration</string>
     <key>PayloadUUID</key>
-    <string>another-unique-uuid</string>
+    <string>${profileUUID}</string> <!-- Insert generated profile UUID -->
     <key>PayloadVersion</key>
     <integer>1</integer>
     <key>PayloadDescription</key>
@@ -56,6 +57,7 @@ document.getElementById('installButton').addEventListener('click', function() {
 </dict>
 </plist>`;
 
+    // Create a Blob with the plist content
     const blob = new Blob([plistContent], { type: 'application/x-apple-aspen-config' });
     const url = URL.createObjectURL(blob);
 
