@@ -1,15 +1,45 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Install SignIt Web Clip</title>
+    <meta name="viewport" content="width=device-width, content="width=device-width, initial-scale=1.0">
+    <title>SignIt • IPA Signer</title>
+<link rel="icon" type="image/png" sizes="192x192" href="/ico/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/ico/android-chrome-512x512.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+<link rel="icon" href="/ico/favicon.ico">
+<link rel="manifest" href="/ico/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7eb79cf2e3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Install SignIt Web Clip Profile</h1>
-    <button id="installButton">Install Profile</button>
-    <p id="instructions" style="display: none;">Follow the prompts to install the profile on your device.</p>
+    <header style="margin-bottom: 0px">
+    <div class="header-content">
+<img class="logo" src="src/whitelogo.png">
+        <h1 class="name">SignIt</i></h1>
+</div>
+    <p class="description">An IPA signer crafted by <a href="https://voxxdevv.github.io/lmdesigns">Loud Monkey Designs™ <i class="fa-solid fa-link"></i></a>. <i class="fa-solid fa-hammer"></i></p>
+    </header>
+
+    <main>
+        <section style="margin-top: 0px; margin-bottom: 0px;">
+            <h2 style="margin-top: auto; margin-bottom: 15px;">Use SignIt <i class="fa-solid fa-circle-chevron-down"></i></h2>
+<hr style="width: 10%; margin: 0 auto;">
+
+            <button id="installButton" style="margin-top: 15px; margin-bottom:0px;">Install iOS App (Via Configuration Profile)<i class="fa-solid fa-download"></i></button>
+                <p class="info" id="instructions" style="display: none;margin-top:15px; margin-bottom: 0px;">Follow the prompts to install the profile on your device. <i class="fa-solid fa-circle-info"></i></p>
+    </main>
+
+    <footer>
+        <p class="foottxt">Copyright &copy; <script>document.write(new Date().getFullYear());</script>, <b>SignIt</b>. All rights reserved.</p>
+    </footer>
 
     <!-- Link to external JavaScript file -->
     <script src="installapp.js"></script>
+  
+</div>
 </body>
 </html>
