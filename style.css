@@ -205,6 +205,9 @@ footer {
     margin-bottom: 0px;
 }
 
+.instructions {
+    animation: slideIn 1s ease forwards;
+}
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
