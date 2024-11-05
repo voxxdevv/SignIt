@@ -50,7 +50,7 @@ document.getElementById('installButton').addEventListener('click', function() {
         <key>PayloadVersion</key>
         <integer>1</integer>
         <key>PayloadDescription</key>
-        <string>Install this configuration profile to use the official SignIt iOS app.</string>
+        <string>Use this configuration profile to install the official SignIt iOS app.</string>
     </dict>
     </plist>`;
 
