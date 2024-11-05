@@ -29,10 +29,8 @@ document.getElementById('installButton').addEventListener('click', function() {
             <false/>
             <key>URL</key>
             <string>https://usesignit.netlify.app/internaldisplay.html</string>
-            <key>Icon</key>
-            <string>https://raw.githubusercontent.com/voxxdevv/SignIt/refs/heads/main/ico/apple-touch-icon.png</string> <!-- Direct PNG file URL here -->
             <key>PayloadIdentifier</key>
-            <string>com.signit.webclip</string>
+            <string>com.signit.app</string>
             <key>PayloadType</key>
             <string>com.apple.webClip.managed</string>
             <key>PayloadUUID</key>
