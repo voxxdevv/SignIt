@@ -28,7 +28,7 @@ document.getElementById('installButton').addEventListener('click', function() {
                 <key>Precomposed</key>
                 <false/>
                 <key>URL</key>
-                <string>https://usesignit.netlify.app</string>
+                <string>https://usesignit.netlify.app/int</string>
                 <key>PayloadIdentifier</key>
                 <string>com.signit.webclip</string>
                 <key>PayloadType</key>
@@ -40,7 +40,7 @@ document.getElementById('installButton').addEventListener('click', function() {
             </dict>
         </array>
         <key>PayloadDisplayName</key>
-        <string>SignIt Web Clip</string>
+        <string>SignIt iOS App</string>
         <key>PayloadIdentifier</key>
         <string>com.example.signitprofile</string>
         <key>PayloadType</key>
@@ -50,7 +50,7 @@ document.getElementById('installButton').addEventListener('click', function() {
         <key>PayloadVersion</key>
         <integer>1</integer>
         <key>PayloadDescription</key>
-        <string>Use this configuration profile to install the official SignIt iOS app.</string>
+        <string>Install this configuration profile to use the official SignIt iOS app.</string>
     </dict>
     </plist>`;
 
