@@ -1,4 +1,3 @@
-// Function to generate a random UUID
 function generateUUID() {
     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
         var r = Math.random() * 16 | 0,
@@ -7,13 +6,10 @@ function generateUUID() {
     });
 }
 
-// Event listener for the Install button
 document.getElementById('installButton').addEventListener('click', function() {
-    // Generate UUIDs for the profile and payload
     const payloadUUID = generateUUID();
     const profileUUID = generateUUID();
 
-    // Define the .plist content as a JavaScript template literal
     const plistContent = `<?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
     <plist version="1.0">
@@ -58,17 +54,12 @@ document.getElementById('installButton').addEventListener('click', function() {
     </dict>
     </plist>`;
 
-    // Create a Blob with the .plist content and trigger a download
-    const blob = new Blob([plistContent], { type: 'application/x-plist' });
+    const blob = new Blob([plistContent], { type: 'application/x-apple-aspen-config' });
     const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'signit.mobileconfig';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
 
-    // Show installation instructions
+    // Open the file in a new tab to prompt download and installation
+    window.location.href = url;
+
+    // Optional: Display installation instructions
     document.getElementById('instructions').style.display = 'block';
 });
