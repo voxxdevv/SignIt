@@ -24,7 +24,7 @@ document.getElementById('installButton').addEventListener('click', function() {
             <key>IsRemovable</key>
             <true/>
             <key>Label</key>
-            <string>SignIt • IPA Signer</string>
+            <string>SignIt</string>
             <key>Precomposed</key>
             <false/>
             <key>URL</key>
@@ -40,7 +40,7 @@ document.getElementById('installButton').addEventListener('click', function() {
         </dict>
     </array>
     <key>PayloadDisplayName</key>
-    <string>SignIt Web Clip</string>
+    <string>SignIt iOS App</string>
     <key>PayloadIdentifier</key>
     <string>com.example.signitprofile</string>
     <key>PayloadType</key>
