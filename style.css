@@ -162,8 +162,8 @@ button {
     color: #ffffff;
     border: none;
     border-radius: 100px;
-    padding: 15px 20px;
-    font-size: 1.25rem;
+    padding: 15px 15px;
+    font-size: 1rem;
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease, filter 0.3s ease;
     width: 65%;
