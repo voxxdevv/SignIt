@@ -18,6 +18,10 @@ body {
     text-size-adjust: none;
 }
 
+body, input, button {
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.4); /* Slight blurred shadow */
+}
+
 /* Styled Horizontal Rule */
 hr {
     width: 90%;
@@ -73,6 +77,7 @@ header {
     width: 55px;
     margin-right: 0px;
     animation: rotateIn 1.5s ease forwards;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); /* Shadow for transparent edges */
 }
 
 .header-content {
@@ -135,7 +140,7 @@ input {
     border-radius: 100px;
     width: 90%;
     transition: all 0.3s ease;
-background: linear-gradient(320deg, rgba(75, 0, 130, 0.5), rgba(106, 90, 205, 0.5));
+background: linear-gradient(300deg, rgba(75, 0, 130, 0.3), rgba(106, 90, 205, 0.3));
     color: #ffffff;
     backdrop-filter: blur(10px);
     animation: fadeIn 1.2s ease forwards;
@@ -150,10 +155,10 @@ input:focus {
 input:disabled {
     color: #aaa;
 background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-            linear-gradient(320deg, rgba(75, 0, 130, 0.5), rgba(106, 90, 205, 0.5));
+            linear-gradient(300deg, rgba(75, 0, 130, 0.3), rgba(106, 90, 205, 0.3));
 }
 
-input:placeholder {
+input::placeholder {
     color: #aaa;
 }
 
