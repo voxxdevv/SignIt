@@ -135,7 +135,7 @@ input {
     border-radius: 100px;
     width: 90%;
     transition: all 0.3s ease;
-    background-color: rgba(255, 255, 255, 0.1);
+background: linear-gradient(320deg, rgba(75, 0, 130, 0.5), rgba(106, 90, 205, 0.5));
     color: #ffffff;
     backdrop-filter: blur(10px);
     animation: fadeIn 1.2s ease forwards;
@@ -149,7 +149,8 @@ input:focus {
 
 input:disabled {
     color: #aaa;
-	 background-color: rgba(0, 0, 0, 0.1);
+background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+            linear-gradient(320deg, rgba(75, 0, 130, 0.5), rgba(106, 90, 205, 0.5));
 }
 
 input:placeholder {
