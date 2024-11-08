@@ -116,6 +116,7 @@ main {
 h1, h3, h4, h5, h6, p {
     opacity: 0;
     animation: fadeIn 1.4s ease forwards;
+        transition: all 0.3s ease;
 }
 
 h1 { font-size: 2.5rem; }
@@ -134,7 +135,7 @@ input {
     border: 2px solid #4b0082;
     border-radius: 100px;
     width: 90%;
-
+    transition: all 0.3s ease;
     background-color: rgba(255, 255, 255, 0.1);
     color: #ffffff;
     backdrop-filter: blur(10px);
