@@ -21,7 +21,7 @@ document.getElementById('generateLinkButton').addEventListener('click', () => {
     }
 });
 
-document.getElementById('installButton').addEventListener('click', () => {
+document.getElementById('diffButton').addEventListener('click', () => {
     if (generatedLink) {
         window.location.href = generatedLink; // Navigate to the generated link
     } else {
