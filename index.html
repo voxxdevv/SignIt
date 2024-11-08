@@ -75,6 +75,105 @@
         <p class="foottxt">Copyright &copy; <script>document.write(new Date().getFullYear());</script>, <b>SignIt</b>. All rights reserved.</p>
     </footer>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIt • IPA Signer</title>
+    <link rel="icon" type="image/png" sizes="192x192" href="/ico/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/ico/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" href="/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+    <link rel="icon" href="/ico/favicon.ico">
+    <link rel="manifest" href="/ico/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7eb79cf2e3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header style="margin-bottom: 0px">
+        <div class="header-content">
+            <img class="logo" src="src/whitelogo.png" alt="SignIt Logo">
+            <h1 class="name">SignIt</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section style="margin-top: 0px; margin-bottom: 0px;">
+            <h2 style="margin-top: auto; margin-bottom: 15px;">About SignIt <i class="fa-solid fa-circle-chevron-down"></i></h2>
+            <hr style="width: 10%; margin: 0 auto;">
+            <p style="margin-bottom: 0px;">SignIt is a streamlined iOS IPA signer crafted by <a href="https://voxxdevv.github.io/lmdesigns">Loud Monkey Designs™ <i class="fa-solid fa-link"></i></a> that allows you to sign and install IPA files directly on your device. <i class="fas fa-file-signature"></i></p>
+        </section>
+        <hr style="margin-top: 15px;margin-bottom: 0px;">
+
+        <!-- Features Section -->
+        <section>
+            <h2 style="margin-top: 15px; margin-bottom: 15px;">Features <i class="fa-solid fa-circle-chevron-down"></i></h2>
+            <hr style="width: 10%; margin: 0 auto;">
+            <p><b>Quick & Easy IPA Signing</b> • SignIt allows you to quickly sign and install IPA files directly on your iOS device, without a computer being required. <i class="fa-solid fa-file-export"></i></p>
+            <p><b>User-Friendly Interface</b> • SignIt contains a sleek, intuitive UI designed for quick and hassle-free signing. <i class="fa-solid fa-mobile-screen-button"></i></p>
+            <p><b>Secure Signing</b> • SignIt uses the <a href="https://cococloud-signing.online">CocoCloud API <i class="fa-solid fa-link"></i></a>, a secure signing API, allowing you to securely sign your IPA files. <i class="fa-solid fa-lock"></i></p>
+            <p><b>Various Usage Options</b> • Use SignIt by installing the iOS app through a configuration profile or by visiting directly through the web. <i class="fa-solid fa-arrow-right-arrow-left"></i></p>
+        </section>
+        <hr style="margin-top: 0px;margin-bottom: 0px;">
+
+        <!-- Use Section -->
+        <section>
+            <h2 style="margin-top: 15px; margin-bottom: 15px;">Use SignIt <i class="fa-solid fa-circle-chevron-down"></i></h2>
+            <hr style="width: 10%; margin: 0 auto;">
+            <button id="installButton" style="margin-top: 15px; margin-bottom:15px;">Install iOS App (Via Configuration Profile) <i class="fa-solid fa-download"></i>
+            <p id="warningMessage" class="info" style="display: none; margin-bottom: 0px;">Your device does not support this option, as it is not running iOS. <i class="fa-regular fa-circle-xmark"></i></p>
+</button>
+
+            <span id="instructions" class="info" style="display: none;margin-top:0px; margin-bottom: 15px;">
+                <b><p style="margin-top:0px; margin-bottom: 15px;">Instructions for Installing iOS App (Via Configuration Profile) <i class="fa-solid fa-angle-down"></i></p></b>
+                <p style="margin-top:0px; margin-bottom: 15px;"><i class="fa-solid fa-angle-right"></i> A prompt will appear asking if you want to allow the download. Tap “Allow".</p>
+                <p style="margin-top:0px; margin-bottom: 15px;"><i class="fa-solid fa-angle-right"></i> After downloading, go to your device’s Settings app. You’ll see a notification at the top saying “Profile Downloaded".</p>
+                <p style="margin-top:0px; margin-bottom: 15px;"><i class="fa-solid fa-angle-right"></i> In Settings, tap “Profile Downloaded” to view the downloaded profile.</p>
+                <p style="margin-top:0px; margin-bottom: 15px;"><i class="fa-solid fa-angle-right"></i> The configuration profile details will display. Tap “Install” in the top-right corner.</p>
+                <p style="margin-top:0px; margin-bottom: 15px;"><i class="fa-solid fa-angle-right"></i> If prompted, enter your device passcode to confirm.</p>
+                <p style="margin-top:0px; margin-bottom: 15px;"><i class="fa-solid fa-angle-right"></i> A warning may appear regarding the configuration profile’s authenticity. Tap “Install” again to proceed.</p>
+                <p style="margin-top:0px; margin-bottom: 0px;"><i class="fa-solid fa-angle-right"></i> Once installed, tap “Done” to finish.</p>
+            </span>
+
+            <form action="/internaldisplay" target="_blank">
+                <button style="margin-top: 0px; margin-bottom: 0px;">Visit Directly (Via Web) <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <p class="info">This option is less stable. <i class="fa-solid fa-triangle-exclamation"></i></p>
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p class="foottxt">Copyright &copy; <script>document.write(new Date().getFullYear());</script>, <b>SignIt</b>. All rights reserved.</p>
+    </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Detect if the device is iOS by checking the user agent
+        const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+        const installButton = document.getElementById("installButton");
+        const warningMessage = document.getElementById("warningMessage");
+
+        // If the device is NOT iOS, disable the button and show the warning
+        if (!isIOS) {
+            installButton.disabled = true;                  // Disable the install button
+            installButton.style.cursor = "not-allowed";     // Change cursor to indicate disabled state
+            warningMessage.style.display = "block";         // Show the warning message
+        } else {
+            installButton.disabled = false;                 // Enable the install button for iOS devices
+            installButton.style.cursor = "pointer";         // Set cursor to pointer for enabled button
+            warningMessage.style.display = "none";          // Hide the warning message for iOS devices
+        }
+    });
+</script>
+
+</body>
+</html>
 
 </body>
 </html>
