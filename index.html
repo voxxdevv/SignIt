@@ -84,13 +84,13 @@
 
         // If the device is NOT iOS, disable the button and show the warning
         if (!isIOS) {
-            installButton.disabled = true;                  // Disable the install button
-            installButton.style.cursor = "not-allowed";     // Change cursor to indicate disabled state
-            warningMessage.style.display = "block";         // Show the warning message
-        } else {
             installButton.disabled = false;                 // Enable the install button for iOS devices
             installButton.style.cursor = "pointer";         // Set cursor to pointer for enabled button
             warningMessage.style.display = "none";          // Hide the warning message for iOS devices
+        } else {
+            installButton.disabled = true;                  // Disable the install button
+            installButton.style.cursor = "not-allowed";     // Change cursor to indicate disabled state
+            warningMessage.style.display = "block";         // Show the warning message
         }
     });
 </script>
