@@ -134,7 +134,7 @@ input {
     border: 2px solid #4b0082;
     border-radius: 100px;
     width: 90%;
-    transition: all 0.3s ease;
+
     background-color: rgba(255, 255, 255, 0.1);
     color: #ffffff;
     backdrop-filter: blur(10px);
