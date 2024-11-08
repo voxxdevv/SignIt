@@ -75,19 +75,24 @@
         <p class="foottxt">Copyright &copy; <script>document.write(new Date().getFullYear());</script>, <b>SignIt</b>. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript to check device and show warning if not iOS -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
-            const installButton = document.getElementById("installButton");
-            const warningMessage = document.getElementById("warningMessage");
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Detect if the device is iOS by checking the user agent
+        const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+        const installButton = document.getElementById("installButton");
+        const warningMessage = document.getElementById("warningMessage");
 
-            if (!isIOS) {
-                installButton.disabled = true;
-                installButton.style.cursor = "not-allowed";
-                warningMessage.style.display = "block";
-            }
-        });
-    </script>
+        // If the device is NOT iOS, disable the button and show the warning
+        if (!isIOS) {
+            installButton.disabled = true;                  // Disable the install button
+            installButton.style.cursor = "not-allowed";     // Change cursor to indicate disabled state
+            warningMessage.style.display = "block";         // Show the warning message
+        } else {
+            installButton.disabled = false;                 // Enable the install button for iOS devices
+            installButton.style.cursor = "pointer";         // Set cursor to pointer for enabled button
+            warningMessage.style.display = "none";          // Hide the warning message for iOS devices
+        }
+    });
+</script>
 </body>
 </html>
