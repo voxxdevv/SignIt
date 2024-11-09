@@ -156,6 +156,7 @@ input:disabled {
     color: #aaa;
 background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
             linear-gradient(300deg, rgba(75, 0, 130, 0.3), rgba(106, 90, 205, 0.3));
+                cursor: not-allowed; /* Change cursor to indicate disabled state */
 }
 
 input::placeholder {
@@ -185,7 +186,15 @@ button:hover {
 
 button:disabled {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-            linear-gradient(300deg, rgba(75, 0, 130, 0.3), rgba(106, 90, 205, 0.3));
+                linear-gradient(300deg, rgba(75, 0, 130, 0.3), rgba(106, 90, 205, 0.3));
+    cursor: not-allowed; /* Change cursor to indicate disabled state */
+    transform: none; /* Prevent hover scale */
+    filter: none; /* Remove brightness effect */
+}
+
+button:disabled:hover {
+    transform: none;
+    filter: none;
 }
 
 /* Section Styles */
