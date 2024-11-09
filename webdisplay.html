@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIt</title>
+    <link rel="icon" type="image/png" sizes="192x192" href="/appico/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/appico/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" href="/appico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/appico/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/appico/favicon-32x32.png">
+    <link rel="icon" href="/appico/favicon.ico">
+    <link rel="manifest" href="/appico/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7eb79cf2e3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header style="margin-bottom: 0px">
+        <div class="header-content">
+            <img class="logo" src="src/whitelogo.png">
+            <h1 class="name">SignIt <span style="color: #aaa; font-weight: 100;">Web</span></h1>
+        </div>
+        <p class="description">An IPA signer crafted by <a href="https://voxxdevv.github.io/lmdesigns" target="_blank">Loud Monkey Designs™ <i class="fa-solid fa-link"></i></a>. <i class="fa-solid fa-hammer"></i></p>
+    </header>
+
+    <!-- Container where the SignIt content will be injected -->
+    <div id="appContainer"></div>
+
+    <!-- External JavaScript files -->
+
+    <footer>
+        <p class="foottxt">Copyright &copy; <script>document.write(new Date().getFullYear());</script>, <b>SignIt</b>. All rights reserved.</p>
+    </footer>
+
+    <script src="maindisplay.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
