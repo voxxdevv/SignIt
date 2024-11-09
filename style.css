@@ -70,6 +70,8 @@ header {
     margin: 0 auto;
     text-align: center;
     animation: slideDown 1s ease forwards;
+    border-bottom-left-radius: 20px 20px;
+	border-bottom-right-radius: 20px 20px;
 }
 
 /* Logo Styles */
@@ -217,6 +219,8 @@ footer {
     margin-top: auto;
     font-size: 1rem;
     animation: slideUp 1.5s ease forwards;
+    border-top-left-radius: 20px 20px;
+	border-top-right-radius: 20px 20px;
 }
 
 .foottxt {
