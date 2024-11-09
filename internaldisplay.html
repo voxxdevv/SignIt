@@ -2,61 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignIt</title>
-<link rel="icon" type="image/png" sizes="192x192" href="/appico/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="/appico/android-chrome-512x512.png">
-     <link rel="apple-touch-icon" href="/appico/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/appico/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/appico/favicon-32x32.png">
-<link rel="icon" href="/appico/favicon.ico">
-<link rel="manifest" href="/appico/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="192x192" href="/appico/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/appico/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" href="/appico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/appico/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/appico/favicon-32x32.png">
+    <link rel="icon" href="/appico/favicon.ico">
+    <link rel="manifest" href="/appico/site.webmanifest">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7eb79cf2e3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header style="margin-bottom: 0px">
-    <div class="header-content">
-<img class="logo" src="src/whitelogo.png">
-        <h1 class="name">SignIt</i></h1>
-</div>
-    <p class="description">An IPA signer crafted by <a href="https://voxxdevv.github.io/lmdesigns" target="_blank">Loud Monkey Designs™ <i class="fa-solid fa-link"></i></a>. <i class="fa-solid fa-hammer"></i></p>
+        <div class="header-content">
+            <img class="logo" src="src/whitelogo.png">
+            <h1 class="name">SignIt</h1>
+        </div>
+        <p class="description">An IPA signer crafted by <a href="https://voxxdevv.github.io/lmdesigns" target="_blank">Loud Monkey Designs™ <i class="fa-solid fa-link"></i></a>. <i class="fa-solid fa-hammer"></i></p>
     </header>
 
-    <main>
-        <section style="margin-top: 0px; margin-bottom: 0px;">
-            <h2 style="margin-top: auto; margin-bottom: 15px;">Link To Your IPA File & Certificate Information <i class="fa-solid fa-circle-chevron-down"></i></h2>
-<hr style="width: 10%; margin: 0 auto;">
-<input style="margin-top: 15px;margin-bottom: 15px;" type="text" id="urlInput" placeholder="Enter IPA file link here...">
-<input style="margin-top: 0px;margin-bottom: 0px;" type="text" id="certp12Input" placeholder="Enter P12 file link here...">
-<input style="margin-top: 15px;margin-bottom: 15px;" type="text" id="certpassInput" placeholder="Enter certificate password here...">
-<input style="margin-top: 0px;margin-bottom: 15px;" type="text" id="mobileprovisionInput" placeholder="Enter provisioning file link here...">
+    <!-- Container where the SignIt content will be injected -->
+    <div id="appContainer"></div>
 
-            <button id="generateLinkButton" style="margin-top: 0px"; margin-bottom:0px;">Sign IPA File <i class="fa-solid fa-file-pen"></i></button>
-
-<p class="info" style="margin-top:15px; margin-bottom: 0px;">Your IPA file will be signed via the <a href="https://cococloud-signing.online" target="_blank">CocoCloud API <i class="fa-solid fa-link"></i></a>. For resources, check out <a href="https://nabzclan.vip/resources/" target="_blank">Nabzclans's Resources Page <i class="fa-solid fa-link"></i></a>. <i class="fa-solid fa-circle-info"></i></p>
-        </section>
-
-        <section id="installLinkSection" style="display: none;margin-top: 0px;">
-<hr style="margin-bottom: 15px; margin-top: 15px;">
-            <h2 style="margin-bottom: 15px; margin-top: 0px;">Install Signed IPA File <i class="fa-solid fa-circle-chevron-down"></i></h2>	
-<hr style="width: 10%; margin: 0 auto;">
-            <p style="margin-top:15px;margin-bottom:0px;"id="linkOutput"></p>
-
-<button onclick="copyLink()" style="margin-top: 15px; margin-bottom: 0px;">Copy Installation Link <i class="fa-solid fa-copy"></i></button>
-
-    <button id="installButton">Install (Direct) <i class="fa-solid fa-download"></i></button>
-
-<p style="margin-bottom: 0px; margin-top: 0px;"></p>
-           
-        </section>
-    </main>
+    <!-- External JavaScript files -->
 
     <footer>
         <p class="foottxt">Copyright &copy; <script>document.write(new Date().getFullYear());</script>, <b>SignIt</b>. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
-  
-</div>
+
+    <script src="maindisplay.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
