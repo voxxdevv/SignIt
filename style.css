@@ -96,6 +96,12 @@ header {
     animation: fadeIn 1.2s ease forwards;
 }
 
+.headinfo {
+    color: #aaa;
+    font-weight: 100;
+    margin-right: 15px;
+}
+
 .description {
     margin-top: 15px;
     margin-left: 15px;
