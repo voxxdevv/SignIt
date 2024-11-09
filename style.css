@@ -18,7 +18,7 @@ body {
     text-size-adjust: none;
 }
 
-body, input, button {
+body, input, button, a {
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.4); /* Slight blurred shadow */
 }
 
