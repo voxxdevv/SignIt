@@ -111,81 +111,6 @@ header {
     animation: fadeIn 1.5s ease forwards;
 }
 
-/* Fullscreen Intro Section */
-.intro-container {
-    min-height: 70vh; /* Minimum height based on viewport height */
-    width: 100%;
-    background: linear-gradient(320deg, #4b0082, #4b0082);
-    display: flex;
-    flex-direction: row; /* Align items horizontally */
-    align-items: center;
-    justify-content: center;
-    animation: slideDown 1s ease forwards;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    gap: 15px; /* Space between logo and text */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-}
-
-/* Text in the Intro Section */
-.intxt {
-    font-size: 2.5rem;
-    color: white;
-    text-align: left; /* Align text to the left */
-    margin: 0;
-    display: flex;
-    align-items: center;
-}
-
-/* Down Arrow Button */
-.down-arrow-button {
-    position: absolute;
-    bottom: 15px;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    border: none;
-    background: linear-gradient(320deg, #4b0082, #6a5acd);
-    cursor: pointer;
-    font-size: 2.5rem;
-    color: #ffffff;
-    transition: opacity 0.2s ease;
-    animation: pulse 2s infinite ease;
-}
-
-/* Pulsing Animation */
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-}
-
-/* Logo */
-.logo {
-    width: 70px;
-    height: 70px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .intro-container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        padding: 30px 10px; /* Add padding */
-        gap: 10px; /* Adjust gap for smaller screens */
-    }
-
-    .intxt {
-        font-size: 2rem; /* Adjust font size */
-        text-align: center; /* Center text for smaller screens */
-    }
-
-    .down-arrow-button {
-        bottom: 10px;
-    }
-}
-
 /* Main Styles */
 main {
     margin: 0 auto;
@@ -285,6 +210,75 @@ button:disabled:hover {
 #installLinkSection {
     margin-top: 30px;
     animation: slideIn 1s ease forwards;
+}
+
+/* Fullscreen Intro Section */
+.intro-container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(320deg, #4b0082, #4b0082);
+    position: relative;
+    animation: slideDown 1s ease forwards;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+
+    box-sizing: border-box; /* Include padding and border in width/height */
+    overflow: hidden; /* Hide overflow content */
+}
+
+/* Center Wrapper */
+.center-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex; /* Use inline-flex to keep elements aligned */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Text in the Intro Section */
+.intxt {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin: 0;
+    margin-right: 0px; /* Fine-tune spacing as needed */
+}
+
+/* Logo */
+.logo2 {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    animation: rotateIn 1.5s ease forwards;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); /* Shadow for transparent edges */
+    margin-left: 15px; /* Fine-tune spacing as needed */
+}
+
+/* Down Arrow Button */
+.down-arrow-button {
+    margin-top: 0px;
+    position: absolute;
+    bottom: 15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(320deg, #4b0082, #6a5acd);
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: #ffffff;
+    transition: opacity 0.2s ease;
+    animation: pulse 2s infinite ease;
+}
+
+/* When hovering over the button */
+.down-arrow-button:hover {
+    transform: scale(1.1);
 }
 
 /* Footer Styles */
