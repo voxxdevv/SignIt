@@ -238,7 +238,9 @@ button:disabled:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100%; /* Ensure it spans full width */
+    width: auto; /* Ensure no stretching across the full width */
+    padding: 0; /* Ensure no padding */
+    margin: 0; /* Ensure no margin */
 }
 
 /* Text in the Intro Section */
@@ -255,7 +257,7 @@ button:disabled:hover {
     display: inline-block;
     animation: rotateIn 1.5s ease forwards;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
-    margin: 0 15px 0 15px; /* Adjusted margin for uniformity */
+    margin: 0 15px; /* Adjusted margin for uniformity and prevent shifting */
 }
 
 /* Down Arrow Button Wrapper */
