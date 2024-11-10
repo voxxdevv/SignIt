@@ -15,17 +15,26 @@
     <script src="https://kit.fontawesome.com/7eb79cf2e3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header style="margin-bottom: 0px">
-        <div class="header-content">
-            <img class="logo" src="src/whitelogo.png" alt="SignIt Logo">
-            <h1 class="name">SignIt</h1>
-        </div>
-    </header>
 
-    <main>
+<!-- Fullscreen Intro Section -->
+<div class="intro-container">
+    <h1 class="intxt"style="font-size: 2.5rem;">
+        <span style="color: #aaa; font-weight: 100; margin: 0;">This is </span>SignIt<span style="color: #aaa; font-weight: 100; margin: 0;">.</span>
+    </h1>
+            <img class="logo" src="src/whitelogo.png" alt="SignIt Logo">
+</div>
+
+<!-- Down Arrow Button -->
+<button class="down-arrow-button" onclick="scrollToMain()">
+    <i class="fa-solid fa-angles-down"></i>
+</button>
+
+
+<!-- Main Section with Content -->
+<main id="main-content" style="margin-top: 0px;">
         <!-- About Section -->
         <section style="margin-top: 0px; margin-bottom: 0px;">
-            <h2 style="margin-top: auto; margin-bottom: 15px;">About SignIt <i class="fa-solid fa-circle-chevron-down"></i></h2>
+            <h2 style="margin-top: 0px; margin-bottom: 15px;">About SignIt <i class="fa-solid fa-circle-chevron-down"></i></h2>
             <hr style="width: 10%; margin: 0 auto;">
             <p style="margin-bottom: 0px;">SignIt is a streamlined iOS IPA signer crafted by <a href="https://voxxdevv.github.io/lmdesigns" target="_blank">Loud Monkey Designs™ <i class="fa-solid fa-link"></i></a> that allows you to sign and install IPA files directly on your device. <i class="fas fa-file-signature"></i></p>
         </section>
@@ -76,6 +85,44 @@
     </footer>
 
 <script>
+// Smooth scroll function
+function scrollToMain() {
+    document.getElementById("main-content").scrollIntoView({ behavior: "smooth" });
+}
+
+// Track scroll direction
+let lastScrollY = window.scrollY;
+
+// Add transition effect when scrolling
+window.addEventListener("scroll", function() {
+    const downArrowButton = document.querySelector('.down-arrow-button');
+    const scrollY = window.scrollY;
+
+    // Calculate opacity based on scroll position
+    const opacity = Math.max(1 - scrollY / 500, 0); // Decrease opacity as you scroll down
+
+    // Apply the calculated opacity
+    downArrowButton.style.opacity = opacity;
+
+    // If scrolling up, increase opacity and restart pulsating animation
+    if (scrollY < lastScrollY) {
+        downArrowButton.style.opacity = Math.min(opacity + 0.2, 1); // Gradually increase opacity when scrolling up
+        downArrowButton.style.animation = "pulse 2s infinite ease"; // Restart pulsating animation
+    }
+
+    // Update last scroll position
+    lastScrollY = scrollY;
+});
+
+// Stop pulsating and reset opacity once clicked
+document.querySelector('.down-arrow-button').addEventListener('click', function() {
+    this.style.animation = "none"; // Stop pulsating
+    this.style.opacity = 0; // Fade out the button after click
+    this.removeEventListener('click', arguments.callee); // Remove click listener after clicking
+});
+</script>
+
+<script>
     document.addEventListener("DOMContentLoaded", function() {
         // Detect if the device is iOS by checking the user agent
         const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
@@ -97,8 +144,6 @@
 
 <script src="installapp.js"></script>
 
-</body>
-</html>
 
 </body>
 </html>
