@@ -357,16 +357,16 @@ footer {
     to { transform: scale(1); opacity: 1; }
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    h1 { font-size: 2rem; }
-    input { width: 80%; }
-    button { width: 80%; }
-}
-
 /* Pulsing Animation */
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.1); }
     100% { transform: scale(1); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    input { width: 80%; }
+    button { width: 80%; }
 }
