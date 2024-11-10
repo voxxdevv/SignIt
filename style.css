@@ -258,7 +258,7 @@ button:disabled:hover {
     display: inline-block;
     animation: rotateIn 1.5s ease forwards;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
-    margin: 0 15px; /* Adjusted margin for uniformity */
+    margin: 0; /* Adjusted margin */
 }
 
 /* Down Arrow Button Wrapper */
