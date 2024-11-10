@@ -23,27 +23,37 @@
         body, html {
             height: 100%;
             display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0; /* Set background color */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            flex: 1; /* Fills available space */
+            display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        .container {
-            height: 100vh;
+        footer {
+            padding: 10px;
+            background-color: #f0f0f0;
             width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             text-align: center;
+            font-size: 0.9em;
+            color: #666;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1><span class="headinfo">This browser is </span>unsupported<span class="headinfo">.</span></h1>
-
+    </div>
     <footer>
         <p class="foottxt">&copy; <script>document.write(new Date().getFullYear());</script> <b>SignIt</b>. All rights reserved.</p>
     </footer>
-    </div>
 </body>
 </html>
