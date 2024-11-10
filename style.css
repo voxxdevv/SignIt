@@ -250,6 +250,7 @@ button:disabled:hover {
     color: #ffffff;
     margin: 0;
     margin-right: 15px;
+    margin-left: 15px;
 }
 
 /* Logo */
@@ -260,6 +261,7 @@ button:disabled:hover {
     animation: rotateIn 1.5s ease forwards;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
     margin: 0; /* Adjusted margin */
+    margin-right: 15px;
 }
 
 /* Down Arrow Button Wrapper */
