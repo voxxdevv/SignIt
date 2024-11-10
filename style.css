@@ -214,9 +214,8 @@ button:disabled:hover {
 
 /* Fullscreen Intro Section */
 .intro-container {
-    height: 100vh;
-    bottom: 0;
-    width: 100%;
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
     background: linear-gradient(320deg, #4b0082, #4b0082);
     position: relative;
     animation: slideDown 1s ease forwards;
@@ -237,7 +236,7 @@ button:disabled:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: inline-flex; /* Use inline-flex to keep elements aligned */
+    display: inline-flex; /* Keep elements aligned horizontally */
     align-items: center;
     justify-content: center;
 }
@@ -262,7 +261,6 @@ button:disabled:hover {
 
 /* Down Arrow Button */
 .down-arrow-button {
-    margin-top: 0px;
     position: absolute;
     bottom: 15px;
     width: 70px;
@@ -275,7 +273,7 @@ button:disabled:hover {
     color: #ffffff;
     transition: opacity 0.2s ease;
     animation: pulse 2s infinite ease;
-	 margin-bottom: 0px;
+    margin-bottom: 0px; /* Remove extra margin at the bottom */
 }
 
 /* When hovering over the button */
