@@ -246,7 +246,9 @@ button:disabled:hover {
     font-size: 2.5rem;
     color: #ffffff;
     margin: 0;
+    margin-left: 15px; /* Fine-tune spacing as needed */
     margin-right: 0px; /* Fine-tune spacing as needed */
+    margin-bottom: 0px;
 }
 
 /* Logo */
@@ -254,9 +256,11 @@ button:disabled:hover {
     width: 70px;
     height: 70px;
     display: inline-block;
+    margin-right: 0px; /* Fine-tune spacing as needed */
     animation: rotateIn 1.5s ease forwards;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); /* Shadow for transparent edges */
     margin-left: 15px; /* Fine-tune spacing as needed */
+    margin-bottom: 0px;
 }
 
 /* Down Arrow Button Wrapper */
@@ -264,6 +268,7 @@ button:disabled:hover {
     position: absolute;
     bottom: 15px; /* Keep the button 15px from the bottom */
     width: 100%; /* Full width of the container */
+    margin-top: 15px;
     display: flex;
     justify-content: center; /* Center the button horizontally */
 }
