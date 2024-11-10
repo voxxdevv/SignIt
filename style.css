@@ -215,6 +215,7 @@ button:disabled:hover {
 /* Fullscreen Intro Section */
 .intro-container {
     height: 100vh;
+    bottom: 0;
     width: 100%;
     background: linear-gradient(320deg, #4b0082, #4b0082);
     position: relative;
@@ -274,6 +275,7 @@ button:disabled:hover {
     color: #ffffff;
     transition: opacity 0.2s ease;
     animation: pulse 2s infinite ease;
+	 margin-bottom: 0px;
 }
 
 /* When hovering over the button */
