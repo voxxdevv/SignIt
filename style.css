@@ -214,8 +214,8 @@ button:disabled:hover {
 
 /* Fullscreen Intro Section */
 .intro-container {
-    height: 100vh; /* Full viewport height */
-    width: 100%; /* Full width */
+    height: 100%; /* Full viewport height */
+    width: 100%;
     background: linear-gradient(320deg, #4b0082, #4b0082);
     position: relative; /* Position relative to contain the absolute button */
     animation: slideDown 1s ease forwards;
