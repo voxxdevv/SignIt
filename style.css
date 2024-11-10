@@ -251,6 +251,7 @@ button:disabled:hover {
     margin: 0;
     margin-right: 15px;
     margin-left: 15px;
+    justify-content: center; /* Center the button horizontally */
 }
 
 /* Logo */
@@ -262,6 +263,7 @@ button:disabled:hover {
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
     margin: 0; /* Adjusted margin */
     margin-right: 15px;
+    justify-content: center; /* Center the button horizontally */
 }
 
 /* Down Arrow Button Wrapper */
