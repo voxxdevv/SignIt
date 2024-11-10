@@ -240,8 +240,6 @@ button:disabled:hover {
     justify-content: center;
     text-align: center;
     padding: 0; /* Ensure no padding */
-    padding-left: 15px;
-    padding-right: 15px;
     margin: 0;  /* Ensure no margin */
     width: 100%; /* Full width */
 }
