@@ -1,30 +1,3 @@
-/* Disable double-tap zooming on iOS */
-html, body {
-    touch-action: manipulation;
-    -ms-touch-action: manipulation; /* for IE/Edge */
-    overflow-x: hidden; /* Prevent horizontal scrolling that could trigger zoom */
-}
-
-/* Prevent user-scalable zooming on all devices */
-@media (pointer: coarse) {
-    /* Disable zoom for devices with coarse pointer (e.g., touch devices) */
-    html, body {
-        user-select: none;
-        touch-action: none;
-    }
-}
-
-/* Additional rule for Safari on iOS to prevent zooming on text input */
-input, textarea, select, button {
-    -webkit-user-modify: read-write-plaintext-only; /* Prevent text input zoom on focus */
-    -webkit-text-size-adjust: 100%;
-}
-
-/* Prevent pinch zooming */
-html {
-    touch-action: none;
-}
-
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
