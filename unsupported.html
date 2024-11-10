@@ -20,9 +20,11 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;  /* Ensure the body takes up the full height of the viewport */
-    width: 100%;   /* Ensure the body takes up the full width of the viewport */
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,8 +34,9 @@ html, body {
 }
 
 .container {
-    height: 100%;  /* Ensure the container stretches to the full height of the viewport */
-    width: 100%;   /* Ensure the container stretches to the full width of the viewport */
+    background: none;
+    height: 100%;  /* Fill the full height of the viewport */
+    width: 100%;   /* Fill the full width of the viewport */
     display: flex;
     align-items: center;
     justify-content: center;
