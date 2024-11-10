@@ -217,15 +217,15 @@ button:disabled:hover {
     height: 100vh; /* Full viewport height */
     width: 100%;
     background: linear-gradient(320deg, #4b0082, #4b0082);
-    position: relative; /* Position relative to contain the absolute button */
+    position: relative;
     animation: slideDown 1s ease forwards;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     padding: 0;
     margin: 0; /* Ensure no external margin */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    box-sizing: border-box; /* Include padding and border in width/height */
-    overflow: hidden; /* Hide overflow content */
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 /* Center Wrapper */
@@ -236,8 +236,9 @@ button:disabled:hover {
     transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    text-align: center; /* Center text within */
+    justify-content: center;
+    text-align: center;
+    width: 100%; /* Ensure it spans full width */
 }
 
 /* Text in the Intro Section */
@@ -245,9 +246,6 @@ button:disabled:hover {
     font-size: 2.5rem;
     color: #ffffff;
     margin: 0;
-    margin-left: 15px; /* Fine-tune spacing as needed */
-    margin-right: 0px; /* Fine-tune spacing as needed */
-    margin-bottom: 0px;
 }
 
 /* Logo */
@@ -255,18 +253,16 @@ button:disabled:hover {
     width: 70px;
     height: 70px;
     display: inline-block;
-    margin-right: 0px; /* Fine-tune spacing as needed */
     animation: rotateIn 1.5s ease forwards;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); /* Shadow for transparent edges */
-    margin-left: 15px; /* Fine-tune spacing as needed */
-    margin-bottom: 0px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+    margin: 0 15px 0 15px; /* Adjusted margin for uniformity */
 }
 
 /* Down Arrow Button Wrapper */
 .down-arrow-wrapper {
     position: absolute;
-    bottom: 15px; /* Keep the button 15px from the bottom */
-    width: 100%; /* Full width of the container */
+    bottom: 15px;
+    width: 100%;
     margin-top: 15px;
     display: flex;
     justify-content: center; /* Center the button horizontally */
