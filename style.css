@@ -222,6 +222,7 @@ button:disabled:hover {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     padding: 0;
+    margin: 0; /* Ensure no external margin */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 
     box-sizing: border-box; /* Include padding and border in width/height */
@@ -273,7 +274,7 @@ button:disabled:hover {
     color: #ffffff;
     transition: opacity 0.2s ease;
     animation: pulse 2s infinite ease;
-    margin-bottom: 0px; /* Remove extra margin at the bottom */
+    margin-bottom: 0px; /* Ensure no margin at the bottom */
 }
 
 /* When hovering over the button */
