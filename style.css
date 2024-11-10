@@ -113,7 +113,7 @@ header {
 
 /* Fullscreen Intro Section */
 .intro-container {
-    min-height: 70vh; /* Minimum height based on viewport height */
+    min-height: 100vh; /* Minimum height based on viewport height */
     width: 100%;
     background: linear-gradient(320deg, #4b0082, #4b0082);
     display: flex;
