@@ -13,34 +13,37 @@
     <link rel="manifest" href="/ico/site.webmanifest">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7eb79cf2e3.js" crossorigin="anonymous"></script>
-<style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body, html {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+        }
 
-body, html, .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container {
-    height: 100%;
-    width: 100%
-    padding: 0;
-    margin: 0; /* Ensure no external margin */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-</style>
+        .container {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-            <h1><span class="headinfo" style="margin: 0">This browser is </span>unsupported<span class="headinfo" style="margin: 0">.</span></h1>
-</div>
-
-<footer>
-        <p class="foottxt">Copyright &copy; <script>document.write(new Date().getFullYear());</script>, <b>SignIt</b>. All rights reserved.</p>
-</footer>
-
+    <div class="container">
+        <h1><span class="headinfo">This browser is </span>unsupported<span class="headinfo">.</span></h1>
+    </div>
+    <footer>
+        <p class="foottxt">&copy; <script>document.write(new Date().getFullYear());</script> <b>SignIt</b>. All rights reserved.</p>
+    </footer>
 </body>
 </html>
