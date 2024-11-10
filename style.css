@@ -241,6 +241,7 @@ button:disabled:hover {
     width: auto; /* Ensure no stretching across the full width */
     padding: 0; /* Ensure no padding */
     margin: 0; /* Ensure no margin */
+    width: 100%;
 }
 
 /* Text in the Intro Section */
