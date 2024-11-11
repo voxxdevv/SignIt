@@ -77,6 +77,8 @@ header {
 /* Logo Styles */
 .logo {
     margin: 0;
+    margin-right: 15px;
+    margin-left: 15px;
     width: 55px;
     animation: rotateIn 1.5s ease forwards;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); /* Shadow for transparent edges */
@@ -92,11 +94,13 @@ header {
     padding: 0; /* Ensure no padding */
     width: 100%; /* Full width */
     margin: 0;
+    margin-top: 15px;
 }
 
 .name {
     font-size: 2.5rem;
     margin-left: 15px;
+    margin-right: 15px;
     margin: 0;
     animation: fadeIn 1.2s ease forwards;
 }
