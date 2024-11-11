@@ -64,7 +64,7 @@ a:hover {
 header {
     background: #4b0082;
     width: 100%;
-    padding: 0 15px;
+    padding: 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 0px;
     margin: 0 auto;
@@ -84,10 +84,8 @@ header {
 }
 
 .header-content {
-    top: 50%;
     left: 0;   /* Align to the left edge of the parent */
     right: 0;  /* Align to the right edge of the parent */
-    transform: translateY(-50%);  /* Only vertically center */
     display: flex;
     align-items: center;
     justify-content: center;
