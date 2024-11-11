@@ -80,7 +80,7 @@ header {
     margin-left: 15px;
     margin-top: 15px;
     margin-right: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     animation: rotateIn 1.5s ease forwards;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); /* Shadow for transparent edges */
 }
@@ -99,7 +99,6 @@ header {
     padding: 0; /* Ensure no padding */
     margin: 0;  /* Ensure no margin */
     width: 100%; /* Full width */
-    gap: 15px;
 }
 
 .name {
