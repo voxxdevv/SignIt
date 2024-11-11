@@ -89,17 +89,16 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0; /* Ensure no padding */
+    padding: 15px; /* Ensure equal padding */
     width: 100%; /* Full width */
-    margin-left: 15px;
-    margin-top: 15px;
-    margin-right: 15px;
-    margin-bottom: 15px;
+    margin: 0;
+    
 }
 
 .name {
     font-size: 2.5rem;
     margin: 0;
+    margin-left:15px;
     animation: fadeIn 1.2s ease forwards;
 }
 
