@@ -83,6 +83,9 @@ header {
 }
 
 .header-content {
+    left: 0;   /* Align to the left edge of the parent */
+    right: 0;  /* Align to the right edge of the parent */
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
