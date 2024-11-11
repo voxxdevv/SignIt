@@ -84,9 +84,18 @@ header {
 }
 
 .header-content {
+    position: absolute;
+    top: 50%;
+    left: 0;   /* Align to the left edge of the parent */
+    right: 0;  /* Align to the right edge of the parent */
+    transform: translateY(-50%);  /* Only vertically center */
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    padding: 0; /* Ensure no padding */
+    margin: 0;  /* Ensure no margin */
+    width: 100%; /* Full width */
     gap: 15px;
 }
 
