@@ -99,6 +99,7 @@ header {
     padding: 0; /* Ensure no padding */
     margin: 0;  /* Ensure no margin */
     width: 100%; /* Full width */
+    gap: 15px;
 }
 
 .name {
@@ -114,7 +115,7 @@ header {
 }
 
 .description {
-    padding-top: 15px;
+    padding-top: 0;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
