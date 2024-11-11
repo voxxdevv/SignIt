@@ -76,6 +76,7 @@ header {
 
 /* Logo Styles */
 .logo {
+    margin:0;
     width: 55px;
     margin-left: 0px;
     margin-top: 15px;
@@ -99,7 +100,6 @@ header {
     padding: 0; /* Ensure no padding */
     margin: 0;  /* Ensure no margin */
     width: 100%; /* Full width */
-    gap: 15px;
 }
 
 .name {
