@@ -77,7 +77,6 @@ header {
 /* Logo Styles */
 .logo {
     margin: 0;
-    margin-right: 15px;
     width: 55px;
     animation: rotateIn 1.5s ease forwards;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); /* Shadow for transparent edges */
