@@ -91,7 +91,7 @@ header {
     text-align: center;
     padding: 0; /* Ensure no padding */
     width: 100%; /* Full width */
-    margin: 15px;
+    margin: 0px;
 }
 
 .name {
