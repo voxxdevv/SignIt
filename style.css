@@ -78,10 +78,6 @@ header {
 .logo {
     margin:0;
     width: 55px;
-    margin-left: 15px;
-    margin-top: 15px;
-    margin-right: 0px;
-    margin-bottom: 15px;
     animation: rotateIn 1.5s ease forwards;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); /* Shadow for transparent edges */
 }
@@ -94,14 +90,17 @@ header {
     justify-content: center;
     text-align: center;
     padding: 0; /* Ensure no padding */
-    margin: 0;  /* Ensure no margin */
     width: 100%; /* Full width */
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
 }
 
 .name {
     font-size: 2.5rem;
     margin: 0;
-    margin-right: 15px;
+    margin-right: 0px;
     margin-left: 15px;
     animation: fadeIn 1.2s ease forwards;
 }
