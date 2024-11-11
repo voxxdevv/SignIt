@@ -64,7 +64,7 @@ a:hover {
 header {
     background: #4b0082;
     width: 100%;
-    padding: 0;
+    padding: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 0px;
     margin: 0 auto;
@@ -77,18 +77,18 @@ header {
 /* Logo Styles */
 .logo {
     width: 55px;
-    margin-left: 15px;
-    margin-top: 15px;
-    margin-right: 0px;
-    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 15px;
+    margin-bottom: 15px;
     animation: rotateIn 1.5s ease forwards;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); /* Shadow for transparent edges */
 }
 
 .header-content {
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-bottom: 0px;
     left: 0;   /* Align to the left edge of the parent */
     right: 0;  /* Align to the right edge of the parent */
@@ -116,9 +116,9 @@ header {
 
 .description {
     margin-top: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
     font-size: 1rem;
     margin-bottom: 0px;
     animation: fadeIn 1.5s ease forwards;
