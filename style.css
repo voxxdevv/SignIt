@@ -78,12 +78,18 @@ header {
 .logo {
     width: 55px;
     margin-left: 15px;
+    margin-top: 15px;
     margin-right: 0px;
+    margin-bottom: 0px;
     animation: rotateIn 1.5s ease forwards;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); /* Shadow for transparent edges */
 }
 
 .header-content {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 0px;
     left: 0;   /* Align to the left edge of the parent */
     right: 0;  /* Align to the right edge of the parent */
     display: flex;
@@ -105,13 +111,14 @@ header {
 .headinfo {
     color: #aaa;
     font-weight: 100;
-    margin-right: 15px;
+    margin: 0px;
 }
 
 .description {
     margin-top: 15px;
     margin-left: 15px;
     margin-right: 15px;
+    margin-bottom: 15px;
     font-size: 1rem;
     margin-bottom: 0px;
     animation: fadeIn 1.5s ease forwards;
