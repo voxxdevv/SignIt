@@ -79,7 +79,7 @@ header {
     width: 55px;
     margin-left: 15px;
     margin-top: 15px;
-    margin-right: 15px;
+    margin-right: 0px;
     margin-bottom: 15px;
     animation: rotateIn 1.5s ease forwards;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); /* Shadow for transparent edges */
