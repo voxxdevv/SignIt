@@ -85,20 +85,18 @@ header {
 .header-content {
     left: 0;   /* Align to the left edge of the parent */
     right: 0;  /* Align to the right edge of the parent */
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 15px; /* Ensure equal padding */
+    padding: 0; /* Ensure no padding */
     width: 100%; /* Full width */
-    margin: 0;
+    margin: 15px;
 }
 
 .name {
     font-size: 2.5rem;
-    margin: 0;
-    margin-left:15px;
+    margin-left: 15px;
     animation: fadeIn 1.2s ease forwards;
 }
 
