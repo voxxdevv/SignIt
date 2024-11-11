@@ -21,22 +21,21 @@
 }
 
 html, body {
-    height: 100%;  /* Ensure the body takes up the full height of the viewport */
-    width: 100%;   /* Ensure the body takes up the full width of the viewport */
+    height: 100%;  /* Ensure body takes up full height of viewport */
+    width: 100%;   /* Ensure body takes up full width of viewport */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;  /* Ensure content flows from top to bottom */
+    justify-content: space-between;  /* Avoid bottom space by stretching container */
     background: linear-gradient(320deg, #4b0082, #6a5acd);  /* Gradient background */
-    overflow: hidden;  /* Prevent any overflow causing a scrollbar */
+    overflow: hidden;  /* Prevent scrollbars */
 }
 
 .container {
-    height: 100%;  /* Ensure the container stretches to the full height of the viewport */
-    width: 100%;   /* Ensure the container stretches to the full width of the viewport */
+    flex: 1;  /* Take up the remaining space */
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 </style>
 </head>
