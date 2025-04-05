@@ -62,12 +62,6 @@ a:hover {
 
 .breadcrumb p {
     font-size: 75%;
-    color: #aaa;
-    padding: 0;
-    margin: 0;
-}
-
-.breadgrad {
     text-transform: uppercase;
     background: linear-gradient(-95deg, #4b0082, #6a5acd);
     -webkit-background-clip: text;
@@ -76,19 +70,25 @@ a:hover {
     text-fill-color: transparent;
     text-shadow: none;
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4));
+    padding: 0;
+    margin: 0;
 }
 
-.breadgradicon {
-    font-size: inherit; /* Match surrounding text size */
-    background: linear-gradient(-95deg, #4b0082, #6a5acd);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
+.breadnorm {
+    font-size: 75%;
+    text-transform: none;
+    background: none;
+    -webkit-background-clip: none;
+    background-clip: none;
+    -webkit-text-fill-color: #aaa;
+    text-fill-color: #aaa;
+    color: #aaa;
     text-shadow: none;
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4));
-    display: inline-block;
+    padding: 0;
+    margin: 0;
 }
+
 .breadcrumb {
     display: inline-block;
     background-color: #ffffff;
