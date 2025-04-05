@@ -68,16 +68,25 @@ a:hover {
 }
 
 .breadgrad {
-     text-transform: uppercase;
-     background: linear-gradient(-95deg, #4b0082, #6a5acd);
+    text-transform: uppercase;
+    background: linear-gradient(-95deg, #4b0082, #6a5acd);
     -webkit-background-clip: text;
-    background-clip: text; /* Add standard property */
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-fill-color: transparent; /* Add standard property */
+    text-fill-color: transparent;
     text-shadow: none;
-    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4)); /* Slight blurred shadow */
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4));
 }
 
+.breadgrad.icon i {
+    font-size: inherit; /* Match surrounding text size */
+    background: inherit;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    display: inline-block;
+}
 .breadcrumb {
     display: inline-block;
     background-color: #ffffff;
