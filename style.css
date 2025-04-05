@@ -73,7 +73,6 @@ a:hover {
     -webkit-background-clip: text;
     background-clip: text; /* Add standard property */
 
-    text-fill-color: transparent; /* Add standard property */
     text-shadow: none;
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4)); /* Slight blurred shadow */
 }
