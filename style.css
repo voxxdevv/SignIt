@@ -80,11 +80,13 @@ a:hover {
 
 .breadgrad.icon i {
     font-size: inherit; /* Match surrounding text size */
-    background: inherit;
+    background: linear-gradient(-95deg, #4b0082, #6a5acd);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
+    text-shadow: none;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4));
     display: inline-block;
 }
 .breadcrumb {
