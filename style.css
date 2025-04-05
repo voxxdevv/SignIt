@@ -64,7 +64,7 @@ a:hover {
     display: inline-block;
     font-size: 75%;
     text-transform: uppercase;
-    background: linear-gradient(-95deg, #74A662, #7CA666);
+    background-color: #00c9ff;
     color: #ffffff;
     border: none;
     font-weight: bold;
@@ -213,7 +213,7 @@ button {
     font-size: 1rem;
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease, filter 0.3s ease;
-    width: 65%;
+    width: 55%;
     margin-top: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
