@@ -178,7 +178,7 @@ input {
     border-radius: 100px;
     width: 90%;
     transition: all 0.3s ease;
-background: linear-gradient(300deg, rgba(75, 0, 130, 0.3), rgba(106, 90, 205, 0.3));
+    background: #4b0082;
     color: #ffffff;
     backdrop-filter: blur(10px);
     animation: fadeIn 1.2s ease forwards;
