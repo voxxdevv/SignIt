@@ -78,7 +78,7 @@ a:hover {
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4));
 }
 
-.breadgrad.icon i {
+.breadgradicon {
     font-size: inherit; /* Match surrounding text size */
     background: linear-gradient(-95deg, #4b0082, #6a5acd);
     -webkit-background-clip: text;
