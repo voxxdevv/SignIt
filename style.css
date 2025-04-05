@@ -71,6 +71,7 @@ a:hover {
     border-radius: 100px;
     text-decoration: none;
     padding: 0 5px;
+    margin-top: 0;
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, background 0.3s ease, filter 0.3s ease; /* Hover transitions */
