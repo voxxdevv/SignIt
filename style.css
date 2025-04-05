@@ -82,8 +82,6 @@ a:hover {
     -webkit-text-fill-color: #aaa;
     text-fill-color: #aaa;
     color: #aaa;
-    text-shadow: none;
-    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4));
     padding: 0;
     margin: 0;
 }
