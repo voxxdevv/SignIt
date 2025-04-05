@@ -174,25 +174,14 @@ input {
     margin: 0px;
     padding: 15px;
     font-size: 1rem;
+    background: #ffffff;
+    border: 2px solid #4b0082;
     border-radius: 100px;
     width: 90%;
     transition: all 0.3s ease;
-    color: #ffffff;
+    color: #4b0082;;
     backdrop-filter: blur(10px);
     animation: fadeIn 1.2s ease forwards;
-}
-
-input:before {
-    content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 100px;
-  border: 2px solid transparent;
-    background: linear-gradient(300deg, rgba(75, 0, 130, 0.3), rgba(106, 90, 205, 0.3));
-  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
 }
 
 input:focus {
