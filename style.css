@@ -64,7 +64,7 @@ a:hover {
     display: inline-block;
     font-size: 75%;
     text-transform: uppercase;
-    background-color: #aaa;
+    background: linear-gradient(-95deg, #74A662, #7CA666);
     color: #ffffff;
     border: none;
     font-weight: bold;
