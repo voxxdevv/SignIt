@@ -72,7 +72,8 @@ a:hover {
      background: linear-gradient(-95deg, #4b0082, #6a5acd);
     -webkit-background-clip: text;
     background-clip: text; /* Add standard property */
-
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent; /* Add standard property */
     text-shadow: none;
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4)); /* Slight blurred shadow */
 }
