@@ -1,41 +1,154 @@
-<main>
-    <section style="margin-top: 0px; margin-bottom: 0px;">
-        <h2 style="margin-top: auto; margin-bottom: 15px;">Link or Upload Your IPA File & Certificate Information <i class="fa-solid fa-circle-chevron-down"></i></h2>
-        <hr style="width: 10%; margin: 0 auto;">
-        
-        <div style="margin-top: 15px; margin-bottom: 15px;">
-            <input type="text" id="urlInput" placeholder="Enter IPA file link here...">
-            <input type="file" id="ipaFile" accept=".ipa" style="margin-top: 5px;">
-        </div>
-        
-        <div style="margin-bottom: 15px;">
-            <input type="text" id="certp12Input" placeholder="Enter P12 file link here...">
-            <input type="file" id="p12File" accept=".p12" style="margin-top: 5px;">
-        </div>
-        
-        <div style="margin-bottom: 15px;">
-            <input type="text" id="certpassInput" placeholder="Enter certificate password here...">
-        </div>
-        
-        <div style="margin-bottom: 15px;">
-            <input type="text" id="mobileprovisionInput" placeholder="Enter provisioning file link here...">
-            <input type="file" id="provisionFile" accept=".mobileprovision" style="margin-top: 5px;">
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIt</title>
+    <link rel="icon" type="image/png" sizes="192x192" href="/ico/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/ico/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" href="/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+    <link rel="icon" href="/ico/favicon.ico">
+    <link rel="manifest" href="/ico/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7eb79cf2e3.js" crossorigin="anonymous"></script>
 
-        <button id="generateLinkButton" style="margin-top: 0px; margin-bottom:0px;">Sign IPA File <i class="fa-solid fa-file-pen"></i></button>
+</head>
+<body>
 
-        <p class="info" style="margin-top:15px; margin-bottom: 0px;">Your IPA file will be signed via the <a href="https://cococloud-signing.online" target="_blank">CocoCloud API <i class="fa-solid fa-link"></i></a>. For resources, check out <a href="https://nabzclan.vip/resources/" target="_blank">Nabzclans's Resources Page <i class="fa-solid fa-link"></i></a>. <i class="fa-solid fa-circle-info"></i></p>
-    </section>
+<!-- Fullscreen Intro Section -->
 
-    <section id="installLinkSection" style="display: none; margin-top: 0px;">
-        <hr style="margin-bottom: 15px; margin-top: 15px;">
-        <h2 style="margin-bottom: 15px; margin-top: 0px;">Install Signed IPA File <i class="fa-solid fa-circle-chevron-down"></i></h2>    
-        <hr style="width: 10%; margin: 0 auto;">
-        <p style="margin-top:15px; margin-bottom:0px;" id="linkOutput"></p>
+<div class="intro-container">
+<div class="center-wrapper">
+    <h1 class="intxt"style="font-size: 2.5rem;">        <span style="color: #aaa; font-weight: 100; margin: 0;">
+This is </span>SignIt<span style="color: #aaa; font-weight: 100; margin: 0;">.</span>
+</h1>
+            <img class="logo2" src="src/whitelogo.png" alt="SignIt Logo">
+</div>
+    <div class="down-arrow-wrapper">
+<!-- Down Arrow Button -->
+<button class="down-arrow-button" onclick="scrollToMain()">
+    <i class="fa-solid fa-angles-down"></i>
+</button>
+</div>
+</div>
 
-        <button onclick="copyLink()" style="margin-top: 15px; margin-bottom: 0px;">Copy Installation Link <i class="fa-solid fa-copy"></i></button>
-        <button id="installButton">Install (Direct) <i class="fa-solid fa-download"></i></button>
+<!-- Main Section with Content -->
+<main id="main-content" style="margin-top: 0px;">
+        <!-- About Section -->
+        <section style="margin-top: 0px; margin-bottom: 0px;">
+            <h2 style="margin-top: 0px; margin-bottom: 15px;">About SignIt <i class="fa-solid fa-circle-chevron-down"></i></h2>
+            <hr style="width: 10%; margin: 0 auto;">
+            <p style="margin-bottom: 0px;">SignIt is a streamlined iOS IPA signer crafted by <a href="https://voxxdevv.github.io/lmdesigns" target="_blank">Loud Monkey Designs™ <i class="fa-solid fa-link"></i></a> that allows you to sign and install IPA files directly on your device. <i class="fas fa-file-signature"></i></p>
+        </section>
+        <hr style="margin-top: 15px;margin-bottom: 0px;">
 
-        <p style="margin-bottom: 0px; margin-top: 0px;"></p>
-    </section>
-</main>
+        <!-- Features Section -->
+        <section>
+            <h2 style="margin-top: 15px; margin-bottom: 15px;">Features <i class="fa-solid fa-circle-chevron-down"></i></h2>
+            <hr style="width: 10%; margin: 0 auto;">
+            <p><b>Quick & Easy IPA Signing</b> • SignIt allows you to quickly sign and install IPA files directly on your iOS device, without a computer being required. <i class="fa-solid fa-file-export"></i></p>
+            <p><b>User-Friendly Interface</b> • SignIt contains a sleek, intuitive UI designed for quick and hassle-free signing. <i class="fa-solid fa-mobile-screen-button"></i></p>
+            <p><b>Secure Signing</b> • SignIt uses the <a href="https://cococloud-signing.online" target="_blank">CocoCloud API <i class="fa-solid fa-link"></i></a>, a secure signing API, allowing you to securely sign your IPA files. <i class="fa-solid fa-lock"></i></p>
+            <p><b>Various Usage Options</b> • Use SignIt by installing the iOS app through a configuration profile or by visiting directly through the web. <i class="fa-solid fa-arrow-right-arrow-left"></i></p>
+        </section>
+        <hr style="margin-top: 0px;margin-bottom: 0px;">
+
+        <!-- Use Section -->
+        <section>
+            <h2 style="margin-top: 15px; margin-bottom: 15px;">Use SignIt <i class="fa-solid fa-circle-chevron-down"></i></h2>
+            <hr style="width: 10%; margin: 0 auto;">
+            <button id="installButton" style="margin-top: 15px; margin-bottom:15px;">Install iOS App (Via Configuration Profile) <i class="fa-solid fa-download"></i>
+            <p id="warningMessage" class="info" style="display: none; margin-bottom: 0px;">Your device does not support this option, as it is not running iOS. <i class="fa-regular fa-circle-xmark"></i></p>
+</button>
+
+            <span id="instructions" class="info" style="display: none;margin-top:0px; margin-bottom: 15px;">
+                <b><p style="margin-top:0px; margin-bottom: 15px;">Instructions for Installing iOS App (Via Configuration Profile) <i class="fa-solid fa-angle-down"></i></p></b>
+                <p style="margin-top:0px; margin-bottom: 15px;"><i class="fa-solid fa-angle-right"></i> A prompt will appear asking if you want to allow the download. Tap “Allow".</p>
+                <p style="margin-top:0px; margin-bottom: 15px;"><i class="fa-solid fa-angle-right"></i> After downloading, go to your device’s Settings app. You’ll see a notification at the top saying “Profile Downloaded".</p>
+                <p style="margin-top:0px; margin-bottom: 15px;"><i class="fa-solid fa-angle-right"></i> In Settings, tap “Profile Downloaded” to view the downloaded profile.</p>
+                <p style="margin-top:0px; margin-bottom: 15px;"><i class="fa-solid fa-angle-right"></i> The configuration profile details will display. Tap “Install” in the top-right corner.</p>
+                <p style="margin-top:0px; margin-bottom: 15px;"><i class="fa-solid fa-angle-right"></i> If prompted, enter your device passcode to confirm.</p>
+                <p style="margin-top:0px; margin-bottom: 15px;"><i class="fa-solid fa-angle-right"></i> A warning may appear regarding the configuration profile’s authenticity. Tap “Install” again to proceed.</p>
+                <p style="margin-top:0px; margin-bottom: 0px;"><i class="fa-solid fa-angle-right"></i> Once installed, tap “Done” to finish.</p>
+            </span>
+
+            <form action="/webdisplay" target="_blank">
+                <button style="margin-top: 0px; margin-bottom: 0px;">Visit Directly (Via Web) <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <p class="info">This option is less stable. <i class="fa-solid fa-triangle-exclamation"></i></p>
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+                    <p class="foottxt" style="margin-bottom: 0px;">Report a problem by clicking <a href="http://forms.gle/yk6g9SmfjwzvSPpN8" target="_blank">here <i class="fa-solid fa-link"></i></a>.</p>
+        <p class="foottxt" style="margin-top: 15px;">Copyright &copy; <script>document.write(new Date().getFullYear());</script>, <b>SignIt</b>. All rights reserved.</p>
+    </footer>
+
+<script>
+// Smooth scroll function
+function scrollToMain() {
+    document.getElementById("main-content").scrollIntoView({ behavior: "smooth" });
+}
+
+// Track scroll direction
+let lastScrollY = window.scrollY;
+
+// Add transition effect when scrolling
+window.addEventListener("scroll", function() {
+    const downArrowButton = document.querySelector('.down-arrow-button');
+    const scrollY = window.scrollY;
+
+    // Calculate opacity based on scroll position
+    const opacity = Math.max(1 - scrollY / 500, 0); // Decrease opacity as you scroll down
+
+    // Apply the calculated opacity
+    downArrowButton.style.opacity = opacity;
+
+    // If scrolling up, increase opacity and restart pulsating animation
+    if (scrollY < lastScrollY) {
+        downArrowButton.style.opacity = Math.min(opacity + 0.2, 1); // Gradually increase opacity when scrolling up
+        downArrowButton.style.animation = "pulse 2s infinite ease"; // Restart pulsating animation
+    }
+
+    // Update last scroll position
+    lastScrollY = scrollY;
+});
+
+// Stop pulsating and reset opacity once clicked
+document.querySelector('.down-arrow-button').addEventListener('click', function() {
+    this.style.animation = "none"; // Stop pulsating
+    this.style.opacity = 0; // Fade out the button after click
+    this.removeEventListener('click', arguments.callee); // Remove click listener after clicking
+});
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Detect if the device is iOS by checking the user agent
+        const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+        const installButton = document.getElementById("installButton");
+        const warningMessage = document.getElementById("warningMessage");
+
+        // If the device is NOT iOS, disable the button and show the warning
+        if (!isIOS) {
+            installButton.disabled = true;                  // Disable the install button
+            installButton.style.cursor = "not-allowed";     // Change cursor to indicate disabled state
+            warningMessage.style.display = "block";         // Show the warning message
+        } else {
+            installButton.disabled = false;                 // Enable the install button for iOS devices
+            installButton.style.cursor = "pointer";         // Set cursor to pointer for enabled button
+            warningMessage.style.display = "none";          // Hide the warning message for iOS devices
+        }
+    });
+</script>
+
+<script src="installapp.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/voxxdevv/lmdesigns-watermark@main/watermarkme.min.js"></script> 
+
+</body>
+</html>
