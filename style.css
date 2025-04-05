@@ -19,7 +19,7 @@ body {
 }
 
 body, input, button, a {
-    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4)); /* Slight blurred shadow */
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.4); /* Slight blurred shadow */
 }
 
 /* Styled Horizontal Rule */
@@ -60,14 +60,20 @@ a:hover {
     filter: brightness(1.1);
 }
 
-.breadcrumb {
+.breadcrumb p {
+    background: linear-gradient(-95deg, #4b0082, #6a5acd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #ffffff;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4)); /* Slight blurred shadow */
+
+}
+
+breadcrumb {
     display: inline-block;
     font-size: 75%;
     text-transform: uppercase;
     background-color: #ffffff;
-    background: linear-gradient(-95deg, #4b0082, #6a5acd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     border: none;
     font-weight: bold;
     border-radius: 100px;
@@ -75,9 +81,8 @@ a:hover {
     padding: 0 5px;
     margin-top: 0;
     cursor: pointer;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, background 0.3s ease, filter 0.3s ease; /* Hover transitions */
-
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Header Styles */
