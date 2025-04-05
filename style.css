@@ -63,8 +63,11 @@ a:hover {
 .breadcrumb p {
     background: linear-gradient(-95deg, #4b0082, #6a5acd);
     -webkit-background-clip: text;
+    background-clip: text; /* Add standard property */
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4)); /* Slight blurred shadow */
+    text-fill-color: transparent; /* Add standard property */
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4));
+    margin: 0; /* Add this to remove default paragraph margins */
 }
 
 .breadcrumb {
@@ -79,8 +82,8 @@ a:hover {
     padding: 0 5px;
     margin-top: 0;
     cursor: pointer;
-    transition: transform 0.3s ease, background 0.3s ease, filter 0.3s ease; /* Hover transitions */
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, background 0.3s ease, filter 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Header Styles */
