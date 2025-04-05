@@ -74,18 +74,6 @@ a:hover {
     margin: 0;
 }
 
-.breadnorm {
-    text-transform: none;
-    background: none;
-    -webkit-background-clip: none;
-    background-clip: none;
-    -webkit-text-fill-color: #aaa;
-    text-fill-color: #aaa;
-    color: #aaa;
-    padding: 0;
-    margin: 0;
-}
-
 .breadcrumb {
     display: inline-block;
     background-color: #ffffff;
