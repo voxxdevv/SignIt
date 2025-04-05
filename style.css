@@ -61,7 +61,8 @@ a:hover {
 }
 
 .breadcrumb p {
-    font-size: 1rem;    
+    font-size: 75%;
+    text-transform: uppercase;
     background: linear-gradient(-95deg, #4b0082, #6a5acd);
     -webkit-background-clip: text;
     background-clip: text; /* Add standard property */
@@ -76,7 +77,6 @@ a:hover {
     background-color: #ffffff;
     border: none;
     font-weight: bold;
-    width: 100%;
     border-radius: 100px;
     text-decoration: none;
     padding: 0 5px;
