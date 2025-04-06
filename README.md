@@ -15,7 +15,7 @@ A streamlined iOS IPA signer crafted by **Loud Monkey Designs™**, SignIt allow
   Sleek and intuitive design for hassle-free IPA signing and installation.
 
 - **Secure Signing**  
-  SignIt uses the **COCOCLOUD API**, ensuring your IPA files are signed securely and reliably.
+  SignIt uses the **CocoCloud API**, ensuring your IPA files are signed securely and reliably.
 
 - **Various Usage Options**  
   Use SignIt by:
