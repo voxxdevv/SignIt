@@ -27,7 +27,7 @@ hr {
     width: 90%;
     border-top: none;
     border: 1px solid #4b0082;
-    border-radius: 50px;
+    border-radius: 25px;
     margin: 0 auto;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     transform: scaleX(0); /* Start with scale 0 on the X-axis */
@@ -44,7 +44,7 @@ a {
     color: #ffffff;
     border: none;
     font-weight: bold;
-    border-radius: 50px;
+    border-radius: 25px;
     text-decoration: none;
     padding: 0 5px;
     cursor: pointer;
@@ -77,7 +77,7 @@ header {
     margin: 0 auto;
     text-align: center;
     animation: slideDown 1s ease forwards;
-    border-radius: 50px;
+    border-radius: 25px;
 }
 
 /* Logo Styles */
@@ -154,7 +154,7 @@ input {
     font-size: 1rem;
     background: #4b0082;
     border: none;
-    border-radius: 50px;
+    border-radius: 25px;
     width: 90%;
     transition: all 0.3s ease;
     color: #ffffff;;
@@ -186,7 +186,7 @@ button {
     background: linear-gradient(90deg, #4b0082, #6a5acd);
     color: #ffffff;
     border: none;
-    border-radius: 50px;
+    border-radius: 25px;
     padding: 15px 15px;
     font-size: 1rem;
     cursor: pointer;
@@ -227,7 +227,7 @@ button:disabled:hover {
     background: linear-gradient(320deg, #4b0082, #4b0082);
     position: relative;
     animation: slideDown 1s ease forwards;
-    border-radius: 50px;
+    border-radius: 25px;
     padding: 0;
     margin: 0; /* Ensure no external margin */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
@@ -316,7 +316,7 @@ footer {
     margin-top: auto;
     font-size: 1rem;
     animation: slideUp 1.5s ease forwards;
-    border-radius: 50px;
+    border-radius: 25px;
 }
 
 .foottxt {
