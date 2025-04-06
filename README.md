@@ -1,4 +1,4 @@
-# SignIt
+## SignIt
 ---
 A streamlined iOS IPA signer crafted by **Loud Monkey Designs™**, SignIt allows you to sign and install IPA files directly on your iOS device — no computer required.
 
