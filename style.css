@@ -29,7 +29,7 @@ hr {
     border: 1px solid #4b0082;
     border-radius: 25px;
     margin: 0 auto;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
     transform: scaleX(0); /* Start with scale 0 on the X-axis */
     animation: revealIn 1.5s ease forwards;
     transform-origin: center; /* Ensures the animation expands from the center */
@@ -130,7 +130,12 @@ main {
     margin-top: 0px;
     margin-bottom: 0px;
     color: #aaa;
+    font-weight: normal;
     animation: fadeIn 1.3s ease forwards;
+}
+
+#warningMessage {
+    font-weight: normal;
 }
 
 /* Title Styles */
