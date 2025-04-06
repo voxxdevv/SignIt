@@ -27,7 +27,7 @@ hr {
     width: 90%;
     border-top: none;
     border: 1px solid #4b0082;
-    border-radius: 100px;
+    border-radius: 50px;
     margin: 0 auto;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     transform: scaleX(0); /* Start with scale 0 on the X-axis */
