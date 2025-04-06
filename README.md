@@ -18,7 +18,7 @@ A streamlined iOS IPA signer crafted by **Loud Monkey Designs™**, SignIt allow
 - **Various Usage Options**  
   Use SignIt by:
   - Installing the iOS app via configuration profile  
-  - Visiting directly through the web at [usesignit.netlify.app](https://usesignit.netlify.app)
+  - Visiting directly through the web
 
 ---
 
