@@ -1,6 +1,6 @@
-/* General Styles */
+/* iOS-Style CSS */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', system-ui, sans-serif;
     background: linear-gradient(320deg, #4b0082, #6a5acd);
     color: #ffffff;
     margin: 0;
@@ -13,184 +13,205 @@ body {
     text-align: center;
     overflow: auto;
     animation: fadeIn 1.3s ease forwards;
-    -moz-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body, input, button, a {
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.4); /* Slight blurred shadow */
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }
 
 /* Styled Horizontal Rule */
 hr {
     width: 90%;
-    border-top: none;
-    border: 1px solid #4b0082;
-    border-radius: 100px;
-    margin: 0 auto;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    transform: scaleX(0); /* Start with scale 0 on the X-axis */
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 15px auto;
+    transform: scaleX(0);
     animation: revealIn 1.5s ease forwards;
-    transform-origin: center; /* Ensures the animation expands from the center */
+    transform-origin: center;
 }
 
 /* Link styles */
 a {
     display: inline-block;
     font-size: 75%;
-    text-transform: uppercase;
-    background: linear-gradient(-95deg, #4b0082, #6a5acd);
+    font-weight: 600;
+    text-transform: none;
+    background: rgba(255, 255, 255, 0.15);
     color: #ffffff;
     border: none;
-    font-weight: bold;
-    border-radius: 100px;
+    border-radius: 18px;
     text-decoration: none;
-    padding: 0 5px;
+    padding: 7px 14px;
     cursor: pointer;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, background 0.3s ease, filter 0.3s ease; /* Hover transitions */
-
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 a:hover {
-    background: linear-gradient(350deg, #4b0082, #6a5acd);
-    text-decoration: underline;
-    transform: scale(1.05);
-    filter: brightness(1.1);
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+a:active {
+    transform: translateY(1px);
+}
+
+.breadcrumb p {
+    font-size: 75%;
+    font-weight: 600;
+    background: linear-gradient(-95deg, #4b0082, #6a5acd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    text-shadow: none;
+    padding: 0;
+    margin: 0;
 }
 
 .breadcrumb {
-    text-shadow: none;
-    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4));
-    padding: 0;
-    margin: 0;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 18px;
+    text-decoration: none;
+    padding: 7px 14px;
+    margin-top: 0;
     margin-bottom: 15px;
-    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Header Styles */
 header {
-    background: #4b0082;
+    background: rgba(75, 0, 130, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     width: 100%;
-    padding: 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    margin-bottom: 0px;
+    padding: 12px 0;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
     margin: 0 auto;
     text-align: center;
     animation: slideDown 1s ease forwards;
-    border-bottom-left-radius: 20px 20px;
-	border-bottom-right-radius: 20px 20px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
 }
 
 /* Logo Styles */
 .logo {
-    margin: 0;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin: 0 15px;
     width: 55px;
     animation: rotateIn 1.5s ease forwards;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); /* Shadow for transparent edges */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 .header-content {
-    left: 0;   /* Align to the left edge of the parent */
-    right: 0;  /* Align to the right edge of the parent */
+    left: 0;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0; /* Ensure no padding */
-    width: 100%; /* Full width */
-    margin: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    padding: 0;
+    width: 100%;
+    margin: 15px 0;
 }
 
 .name {
-    font-size: 2.5rem;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0 15px;
+    letter-spacing: -0.5px;
     animation: fadeIn 1.2s ease forwards;
 }
 
 .headinfo {
-    color: #aaa;
-    font-weight: 100;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
     margin: 0;
+    font-size: 0.9rem;
 }
 
 .description {
-    margin: 0;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    font-size: 1rem;    
+    margin: 5px 15px 15px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
     padding: 0;
+    color: rgba(255, 255, 255, 0.9);
     animation: fadeIn 1.5s ease forwards;
 }
 
 /* Main Styles */
 main {
     margin: 0 auto;
-    padding: 15px;
+    padding: 20px 15px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
     animation: slideIn 1.2s ease forwards;
 }
 
 .info {
-    font-size: 1rem;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    color: #aaa;
+    font-size: 0.9rem;
+    margin: 8px 0;
+    color: rgba(255, 255, 255, 0.7);
     animation: fadeIn 1.3s ease forwards;
 }
 
 /* Title Styles */
-h1, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p {
     opacity: 0;
     animation: fadeIn 1.4s ease forwards;
+    margin: 10px 0;
+    letter-spacing: -0.3px;
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 1.6rem; }
-h3 { font-size: 1.55rem; }
-h4 { font-size: 1.5rem; }
-h5 { font-size: 1.25rem; }
-h6 { font-size: 1rem; }
-p { font-size: 1rem; }
+h1 { font-size: 2.2rem; font-weight: 700; }
+h2 { font-size: 1.8rem; font-weight: 700; }
+h3 { font-size: 1.5rem; font-weight: 600; }
+h4 { font-size: 1.3rem; font-weight: 600; }
+h5 { font-size: 1.1rem; font-weight: 600; }
+h6 { font-size: 1rem; font-weight: 600; }
+p { font-size: 1rem; font-weight: 400; line-height: 1.5; }
 
 /* Input Styles */
 input {
-    margin: 0px;
+    margin: 8px 0;
     padding: 15px;
     font-size: 1rem;
-    background: #4b0082;
+    background: rgba(255, 255, 255, 0.15);
     border: none;
-    border-radius: 100px;
-    width: 90%;
-    transition: all 0.3s ease;
-    color: #ffffff;;
+    border-radius: 12px;
+    width: 100%;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    color: #ffffff;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     animation: fadeIn 1.2s ease forwards;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
 }
 
 input:focus {
     outline: none;
-    border-color: #00c9ff;
-    box-shadow: 0 0 10px #00c9ff;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 0 2px rgba(0, 199, 255, 0.5);
 }
 
 input:disabled {
-    color: #aaa;
-background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-            linear-gradient(300deg, rgba(75, 0, 130, 0.3), rgba(106, 90, 205, 0.3));
-                cursor: not-allowed; /* Change cursor to indicate disabled state */
+    color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.07);
+    cursor: not-allowed;
 }
 
 input::placeholder {
-    color: #aaa;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /* Button Styles */
@@ -199,32 +220,32 @@ button {
     background: linear-gradient(90deg, #4b0082, #6a5acd);
     color: #ffffff;
     border: none;
-    border-radius: 100px;
-    padding: 15px 15px;
+    border-radius: 12px;
+    padding: 15px;
     font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
-    transition: transform 0.3s ease, background 0.3s ease, filter 0.3s ease;
-    width: 55%;
+    width: 100%;
     margin-top: 15px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 button:hover {
-    transform: scale(1.05);
-    filter: brightness(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 button:disabled {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-                linear-gradient(300deg, rgba(75, 0, 130, 0.3), rgba(106, 90, 205, 0.3));
-    cursor: not-allowed; /* Change cursor to indicate disabled state */
-    transform: none; /* Prevent hover scale */
-    filter: none; /* Remove brightness effect */
-}
-
-button:disabled:hover {
+    background: rgba(255, 255, 255, 0.2);
+    cursor: not-allowed;
     transform: none;
-    filter: none;
+    box-shadow: none;
 }
 
 /* Section Styles */
@@ -235,16 +256,16 @@ button:disabled:hover {
 
 /* Fullscreen Intro Section */
 .intro-container {
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     width: 100%;
     background: linear-gradient(320deg, #4b0082, #4b0082);
     position: relative;
     animation: slideDown 1s ease forwards;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
     padding: 0;
-    margin: 0; /* Ensure no external margin */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -253,26 +274,25 @@ button:disabled:hover {
 .center-wrapper {
     position: absolute;
     top: 50%;
-    left: 0;   /* Align to the left edge of the parent */
-    right: 0;  /* Align to the right edge of the parent */
-    transform: translateY(-50%);  /* Only vertically center */
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0; /* Ensure no padding */
-    margin: 0;  /* Ensure no margin */
-    width: 100%; /* Full width */
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 /* Text in the Intro Section */
 .intxt {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    font-weight: 700;
     color: #ffffff;
-    margin: 0;
-    margin-right: 15px;
-    margin-left: 15px;
-    justify-content: center; /* Center the button horizontally */
+    margin: 0 15px;
+    letter-spacing: -0.5px;
 }
 
 /* Logo */
@@ -281,69 +301,73 @@ button:disabled:hover {
     height: 70px;
     display: inline-block;
     animation: rotateIn 1.5s ease forwards;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
-    margin: 0; /* Adjusted margin */
-    margin-right: 15px;
-    justify-content: center; /* Center the button horizontally */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    margin: 0 15px;
 }
 
 /* Down Arrow Button Wrapper */
 .down-arrow-wrapper {
     position: absolute;
-    bottom: 15px;
+    bottom: 30px;
     width: 100%;
-    margin-top: 15px;
     display: flex;
-    justify-content: center; /* Center the button horizontally */
+    justify-content: center;
 }
 
 /* Down Arrow Button */
 .down-arrow-button {
-    width: 70px;
-    height: 70px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     border: none;
-    background: linear-gradient(320deg, #4b0082, #6a5acd);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     cursor: pointer;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: #ffffff;
-    transition: opacity 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     animation: pulse 2s infinite ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* When hovering over the button */
 .down-arrow-button:hover {
     transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.3);
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
-    background: #4b0082;
+    background: rgba(75, 0, 130, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     margin: 0 auto;
     width: 100%;
     display: inline-block;
     align-items: center;
     justify-content: space-around;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1);
     padding: 15px 0;
     margin-top: auto;
-    font-size: 1rem;
+    font-size: 0.9rem;
     animation: slideUp 1.5s ease forwards;
-    border-top-left-radius: 20px 20px;
-	border-top-right-radius: 20px 20px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
 }
 
 .foottxt {
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0 15px;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 #instructions {
     animation: slideIn 1s ease forwards;
 }
+
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -372,7 +396,7 @@ footer {
     }
     to {
         opacity: 1;
-        transform: scaleX(1); /* Expand to full width */
+        transform: scaleX(1);
     }
 }
 
@@ -389,13 +413,14 @@ footer {
 /* Pulsing Animation */
 @keyframes pulse {
     0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
+    50% { transform: scale(1.08); }
     100% { transform: scale(1); }
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    h1 { font-size: 2rem; }
-    input { width: 80%; }
-    button { width: 80%; }
+    h1 { font-size: 1.8rem; }
+    .name { font-size: 1.8rem; }
+    .intxt { font-size: 1.8rem; }
+    main { padding: 15px 20px; }
 }
