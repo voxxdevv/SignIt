@@ -60,20 +60,13 @@ a:hover {
     filter: brightness(1.1);
 }
 
-.breadcrumb p {
+.breadcrumb {
     text-shadow: none;
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4));
     padding: 0;
     margin: 0;
     margin-bottom: 15px;
     color: #ffffff;
-}
-
-.breadcrumb {
-    box-shadow: none;
-    padding: 0;
-    margin: 0;
-    background: none;
 }
 
 /* Header Styles */
