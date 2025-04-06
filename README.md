@@ -4,7 +4,7 @@ A streamlined iOS IPA signer crafted by **Loud Monkey Designs™**, SignIt allow
 
 **[Visit SignIt](https://usesignit.netlify.app)**
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5b53c81a-5230-4860-a5a3-fbe7d2102d19/deploy-status)]
+![Netlify Status](https://api.netlify.com/api/v1/badges/5b53c81a-5230-4860-a5a3-fbe7d2102d19/deploy-status)
 
 ### Features
 
