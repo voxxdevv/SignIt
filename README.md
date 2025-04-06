@@ -4,7 +4,7 @@ A streamlined iOS IPA signer crafted by **Loud Monkey Designs™**, SignIt allow
 
 **[Visit SignIt](https://usesignit.netlify.app)**
 
-## Features
+### Features
 
 - **Quick & Easy IPA Signing**  
   Sign and install IPA files directly on your iOS device, eliminating the need for a computer.
