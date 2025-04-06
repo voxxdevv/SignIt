@@ -24,7 +24,7 @@ body, input, button, a {
 
 /* Styled Horizontal Rule */
 hr {
-    width: 100%;
+    width: 90%;
     border-top: none;
     border: 1px solid #4b0082;
     border-radius: 25px;
