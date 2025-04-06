@@ -1,7 +1,7 @@
 /* General Styles */
 body {
-    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: #000000;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', system-ui, sans-serif;
+    background: linear-gradient(320deg, #4b0082, #6a5acd);
     color: #ffffff;
     margin: 0;
     padding: 0;
@@ -12,27 +12,28 @@ body {
     min-height: 100vh;
     text-align: center;
     overflow: auto;
-    animation: fadeIn 1.3s ease forwards;
+    animation: fadeIn 1.3s cubic-bezier(0.42, 0, 0.58, 1) forwards;
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
 }
 
 body, input, button, a {
-    text-shadow: none; /* iOS 18 doesn't use text shadows */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); /* Refined shadow for iOS 18 */
+    font-weight: 400; /* iOS 18 default font weight */
 }
 
 /* Styled Horizontal Rule */
 hr {
     width: 90%;
     border-top: none;
-    border: 0.5px solid rgba(255, 255, 255, 0.2);
-    border-radius: 0;
+    border: 1px solid rgba(75, 0, 130, 0.5); /* Semi-transparent for iOS 18 look */
+    border-radius: 100px;
     margin: 0 auto;
-    box-shadow: none;
-    transform: scaleX(0); /* Start with scale 0 on the X-axis */
-    animation: revealIn 1.5s ease forwards;
-    transform-origin: center; /* Ensures the animation expands from the center */
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3); /* Softer shadow for iOS 18 */
+    transform: scaleX(0);
+    animation: revealIn 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards; /* iOS 18 animation curve */
+    transform-origin: center;
 }
 
 /* Link styles */
@@ -40,46 +41,51 @@ a {
     display: inline-block;
     font-size: 75%;
     text-transform: uppercase;
-    background: rgba(10, 132, 255, 0.1);
-    color: #0A84FF;
+    background: rgba(75, 0, 130, 0.4); /* Semi-transparent for iOS 18 */
+    color: #ffffff;
     border: none;
-    font-weight: 600;
-    border-radius: 12px;
+    font-weight: 600; /* Semi-bold for iOS 18 */
+    border-radius: 100px;
     text-decoration: none;
     padding: 0 5px;
     cursor: pointer;
-    box-shadow: none;
-    transition: background-color 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1); /* iOS 18 transition curve */
+    backdrop-filter: blur(10px); /* iOS 18 blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
 }
 
 a:hover {
-    background: rgba(10, 132, 255, 0.2);
-    text-decoration: none;
-    transform: none;
-    filter: none;
+    background: rgba(106, 90, 205, 0.6); /* Lighter on hover for iOS 18 */
+    text-decoration: none; /* iOS 18 typically doesn't use underlines */
+    transform: scale(1.05);
+    filter: brightness(1.1);
 }
 
 .breadcrumb {
     text-shadow: none;
-    filter: none;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25));
     padding: 0;
     margin: 0;
     margin-bottom: 15px;
     color: #ffffff;
+    font-weight: 300; /* Light weight for iOS 18 breadcrumb */
 }
 
 /* Header Styles */
 header {
-    background: rgba(30, 30, 30, 1);
+    background: rgba(75, 0, 130, 0.6); /* Semi-transparent for iOS 18 */
     width: 100%;
     padding: 0;
-    box-shadow: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     margin-bottom: 0px;
     margin: 0 auto;
     text-align: center;
-    animation: slideDown 1s ease forwards;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    animation: slideDown 1s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+    border-bottom-left-radius: 30px; /* Increased radius for iOS 18 */
+    border-bottom-right-radius: 30px; /* Increased radius for iOS 18 */
+    backdrop-filter: blur(20px); /* iOS 18 heavy blur effect */
+    -webkit-backdrop-filter: blur(20px); /* For Safari support */
 }
 
 /* Logo Styles */
@@ -88,8 +94,8 @@ header {
     margin-right: 15px;
     margin-left: 15px;
     width: 55px;
-    animation: fadeIn 1s ease forwards;
-    filter: none;
+    animation: rotateIn 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2)); /* Softer shadow for iOS 18 */
 }
 
 .header-content {
@@ -111,17 +117,14 @@ header {
     margin-left: 15px;
     margin-right: 15px;
     margin: 0;
-    font-weight: 700;
-    animation: fadeIn 1.2s ease forwards;
-    background: linear-gradient(90deg, #0A84FF, #30D158);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    animation: fadeIn 1.2s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+    font-weight: 600; /* Semi-bold for iOS 18 header */
+    letter-spacing: -0.5px; /* iOS 18 typography */
 }
 
 .headinfo {
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7); /* More transparent for iOS 18 */
+    font-weight: 300; /* Light weight for iOS 18 */
     margin: 0;
 }
 
@@ -132,59 +135,64 @@ header {
     margin-bottom: 15px;
     font-size: 1rem;    
     padding: 0;
-    animation: fadeIn 1.5s ease forwards;
-    color: rgba(255, 255, 255, 0.8);
+    animation: fadeIn 1.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+    font-weight: 400; /* Regular weight for iOS 18 */
+    letter-spacing: -0.2px; /* iOS 18 typography */
 }
 
 /* Main Styles */
 main {
     margin: 0 auto;
     padding: 15px;
-    animation: fadeIn 1.2s ease forwards;
+    animation: slideIn 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    width: 100%;
+    max-width: 800px;
 }
 
 .info {
     font-size: 1rem;
     margin-top: 0px;
     margin-bottom: 0px;
-    color: rgba(255, 255, 255, 0.6);
-    animation: fadeIn 1.3s ease forwards;
+    color: rgba(255, 255, 255, 0.7); /* More transparent for iOS 18 */
+    animation: fadeIn 1.3s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+    font-weight: 300; /* Light weight for iOS 18 */
 }
 
 /* Title Styles */
 h1, h3, h4, h5, h6, p {
     opacity: 0;
-    animation: fadeIn 1.4s ease forwards;
+    animation: fadeIn 1.4s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+    letter-spacing: -0.3px; /* iOS 18 typography */
 }
 
 h1 { 
     font-size: 2.5rem; 
-    font-weight: 700;
+    font-weight: 700; /* Bold for iOS 18 */
 }
 h2 { 
     font-size: 1.6rem; 
-    font-weight: 600;
+    font-weight: 600; /* Semi-bold for iOS 18 */
 }
 h3 { 
     font-size: 1.55rem; 
     font-weight: 600;
 }
 h4 { 
-    font-size: 1.5rem;
+    font-size: 1.5rem; 
     font-weight: 500;
 }
 h5 { 
-    font-size: 1.25rem;
+    font-size: 1.25rem; 
     font-weight: 500;
 }
 h6 { 
-    font-size: 1rem;
+    font-size: 1rem; 
     font-weight: 500;
 }
 p { 
-    font-size: 1rem;
+    font-size: 1rem; 
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5; /* iOS 18 line height */
 }
 
 /* Input Styles */
@@ -192,62 +200,74 @@ input {
     margin: 0px;
     padding: 15px;
     font-size: 1rem;
-    background: rgba(30, 30, 30, 1);
+    background: rgba(75, 0, 130, 0.3); /* More transparent for iOS 18 */
     border: none;
-    border-radius: 12px;
+    border-radius: 100px;
     width: 90%;
-    transition: all 0.2s ease;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
     color: #ffffff;
-    backdrop-filter: blur(20px);
-    animation: fadeIn 1.2s ease forwards;
-    box-shadow: none;
+    backdrop-filter: blur(15px); /* iOS 18 blur effect */
+    -webkit-backdrop-filter: blur(15px); /* For Safari support */
+    animation: fadeIn 1.2s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.1); /* iOS 18 subtle inner glow */
 }
 
 input:focus {
     outline: none;
-    background: rgba(40, 40, 40, 1);
-    box-shadow: 0 0 0 2px rgba(10, 132, 255, 0.5);
+    background: rgba(75, 0, 130, 0.4); /* Slightly darker when focused */
+    box-shadow: 0 0 0 2px rgba(0, 201, 255, 0.5), 0 2px 8px rgba(0, 0, 0, 0.2); /* iOS 18 focus ring */
 }
 
 input:disabled {
-    color: rgba(255, 255, 255, 0.4);
-    background: rgba(30, 30, 30, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    background: rgba(75, 0, 130, 0.15);
+    backdrop-filter: blur(5px); /* Reduced blur for disabled state */
+    -webkit-backdrop-filter: blur(5px);
     cursor: not-allowed;
 }
 
 input::placeholder {
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.5); /* iOS 18 placeholder */
 }
 
 /* Button Styles */
 button {
     display: inline-block;
-    background: #0A84FF;
+    background: rgba(75, 0, 130, 0.7); /* Semi-transparent for iOS 18 */
     color: #ffffff;
     border: none;
-    border-radius: 12px;
+    border-radius: 100px;
     padding: 15px 15px;
     font-size: 1rem;
-    font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
     width: 55%;
     margin-top: 15px;
-    box-shadow: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    font-weight: 600; /* Semi-bold for iOS 18 buttons */
+    backdrop-filter: blur(10px); /* iOS 18 blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
 }
 
 button:hover {
-    background: #0071E3;
-    transform: none;
-    filter: none;
+    transform: scale(1.03); /* Subtler scale for iOS 18 */
+    filter: brightness(1.1);
+    background: rgba(106, 90, 205, 0.8); /* Brighter on hover */
+}
+
+button:active {
+    transform: scale(0.98); /* iOS 18 press effect */
 }
 
 button:disabled {
-    background: rgba(30, 30, 30, 0.5);
-    color: rgba(255, 255, 255, 0.4);
+    background: rgba(75, 0, 130, 0.2);
+    backdrop-filter: blur(5px); /* Reduced blur for disabled state */
+    -webkit-backdrop-filter: blur(5px);
     cursor: not-allowed;
     transform: none;
     filter: none;
+    box-shadow: none;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 button:disabled:hover {
@@ -258,39 +278,41 @@ button:disabled:hover {
 /* Section Styles */
 #installLinkSection {
     margin-top: 30px;
-    animation: fadeIn 1s ease forwards;
+    animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 /* Fullscreen Intro Section */
 .intro-container {
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     width: 100%;
-    background: #000000;
+    background: linear-gradient(320deg, rgba(75, 0, 130, 0.7), rgba(75, 0, 130, 0.7)); /* Semi-transparent for iOS 18 */
     position: relative;
-    animation: fadeIn 1s ease forwards;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    animation: slideDown 1s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+    border-bottom-left-radius: 30px; /* Increased radius for iOS 18 */
+    border-bottom-right-radius: 30px; /* Increased radius for iOS 18 */
     padding: 0;
-    margin: 0; /* Ensure no external margin */
-    box-shadow: none;
+    margin: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
     overflow: hidden;
+    backdrop-filter: blur(20px); /* iOS 18 heavy blur effect */
+    -webkit-backdrop-filter: blur(20px); /* For Safari support */
 }
 
 /* Center Wrapper */
 .center-wrapper {
     position: absolute;
     top: 50%;
-    left: 0;   /* Align to the left edge of the parent */
-    right: 0;  /* Align to the right edge of the parent */
-    transform: translateY(-50%);  /* Only vertically center */
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0; /* Ensure no padding */
-    margin: 0;  /* Ensure no margin */
-    width: 100%; /* Full width */
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 /* Text in the Intro Section */
@@ -300,12 +322,9 @@ button:disabled:hover {
     margin: 0;
     margin-right: 15px;
     margin-left: 15px;
-    justify-content: center; /* Center the button horizontally */
-    font-weight: 700;
-    background: linear-gradient(90deg, #0A84FF, #30D158, #FF453A);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    justify-content: center;
+    font-weight: 700; /* Bold for iOS 18 */
+    letter-spacing: -0.5px; /* iOS 18 typography */
 }
 
 /* Logo */
@@ -313,11 +332,11 @@ button:disabled:hover {
     width: 70px;
     height: 70px;
     display: inline-block;
-    animation: fadeIn 1.5s ease forwards;
-    filter: none;
-    margin: 0; /* Adjusted margin */
+    animation: rotateIn 1.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2)); /* Softer shadow for iOS 18 */
+    margin: 0;
     margin-right: 15px;
-    justify-content: center; /* Center the button horizontally */
+    justify-content: center;
 }
 
 /* Down Arrow Button Wrapper */
@@ -327,46 +346,54 @@ button:disabled:hover {
     width: 100%;
     margin-top: 15px;
     display: flex;
-    justify-content: center; /* Center the button horizontally */
+    justify-content: center;
 }
 
 /* Down Arrow Button */
 .down-arrow-button {
     width: 70px;
     height: 70px;
-    border-radius: 35px;
+    border-radius: 50%;
     border: none;
-    background: rgba(30, 30, 30, 0.8);
-    backdrop-filter: blur(20px);
+    background: rgba(75, 0, 130, 0.6); /* Semi-transparent for iOS 18 */
     cursor: pointer;
     font-size: 2.5rem;
     color: #ffffff;
-    transition: background-color 0.2s ease;
-    animation: pulse 2s infinite ease;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    animation: pulse 2s infinite cubic-bezier(0.4, 0, 0.6, 1); /* iOS 18 pulse curve */
+    backdrop-filter: blur(10px); /* iOS 18 blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1); /* iOS 18 depth effect */
 }
 
 /* When hovering over the button */
 .down-arrow-button:hover {
-    background: rgba(40, 40, 40, 0.8);
-    transform: none;
+    transform: scale(1.05);
+    background: rgba(106, 90, 205, 0.7); /* Brighter on hover */
+}
+
+.down-arrow-button:active {
+    transform: scale(0.95); /* iOS 18 press effect */
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
-    background: rgba(30, 30, 30, 1);
+    background: rgba(75, 0, 130, 0.6); /* Semi-transparent for iOS 18 */
     margin: 0 auto;
     width: 100%;
     display: inline-block;
     align-items: center;
     justify-content: space-around;
-    box-shadow: none;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Shadow direction for footer */
     padding: 15px 0;
     margin-top: auto;
     font-size: 1rem;
-    animation: fadeIn 1.5s ease forwards;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    animation: slideUp 1.5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+    border-top-left-radius: 30px; /* Increased radius for iOS 18 */
+    border-top-right-radius: 30px; /* Increased radius for iOS 18 */
+    backdrop-filter: blur(20px); /* iOS 18 heavy blur effect */
+    -webkit-backdrop-filter: blur(20px); /* For Safari support */
 }
 
 .foottxt {
@@ -374,13 +401,14 @@ footer {
     margin-right: 15px;
     margin-top: 0px;
     margin-bottom: 0px;
-    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300; /* Light weight for iOS 18 footer */
 }
 
 #instructions {
-    animation: fadeIn 1s ease forwards;
+    animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
-/* Animations */
+
+/* Animations - Using iOS 18 animation curves */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -408,7 +436,7 @@ footer {
     }
     to {
         opacity: 1;
-        transform: scaleX(1); /* Expand to full width */
+        transform: scaleX(1);
     }
 }
 
@@ -422,7 +450,7 @@ footer {
     to { transform: scale(1); opacity: 1; }
 }
 
-/* Pulsing Animation */
+/* Pulsing Animation - More subtle for iOS 18 */
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
@@ -434,4 +462,14 @@ footer {
     h1 { font-size: 2rem; }
     input { width: 80%; }
     button { width: 80%; }
+}
+
+/* iOS 18 Dynamic Island compatibility */
+@supports (padding-top: env(safe-area-inset-top)) {
+    body {
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+    }
 }
