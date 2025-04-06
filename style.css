@@ -121,16 +121,6 @@ header {
     margin: 0;
 }
 
-.description {
-    margin: 0;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    font-size: 1rem;    
-    padding: 0;
-    animation: fadeIn 1.5s ease forwards;
-}
-
 /* Main Styles */
 main {
     margin: 0 auto;
