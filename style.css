@@ -86,7 +86,7 @@ header {
 /* Logo Styles */
 .logo {
     margin: 0;
-    margin-right: 15px;
+    margin-right: 0;
     margin-left: 15px;
     width: 55px;
     animation: rotateIn 1.5s ease forwards;
