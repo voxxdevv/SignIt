@@ -75,10 +75,10 @@ header {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 0px;
     margin: 0 auto;
+    margin: 15px;
     text-align: center;
     animation: slideDown 1s ease forwards;
-    border-bottom-left-radius: 20px 20px;
-	border-bottom-right-radius: 20px 20px;
+    border-radius: 100px;
 }
 
 /* Logo Styles */
