@@ -1,7 +1,7 @@
 # SignIt
 
 **[Visit SignIt](https://usesignit.netlify.app)**  
-A streamlined iOS IPA signer crafted by **LOUD MONKEY DESIGNS™**, SignIt allows you to sign and install IPA files directly on your iOS device — no computer required.
+A streamlined iOS IPA signer crafted by **Loud Monkey Designs™**, SignIt allows you to sign and install IPA files directly on your iOS device — no computer required.
 
 ## Features
 
@@ -18,10 +18,6 @@ A streamlined iOS IPA signer crafted by **LOUD MONKEY DESIGNS™**, SignIt allow
   Use SignIt by:
   - Installing the iOS app via configuration profile  
   - Visiting directly through the web at [usesignit.netlify.app](https://usesignit.netlify.app)
-
-## About
-
-SignIt is developed and maintained by **LOUD MONKEY DESIGNS™**, a creative development team focused on simplifying complex tools with elegant UI and seamless UX.
 
 ---
 
