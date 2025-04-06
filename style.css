@@ -65,12 +65,14 @@ a:hover {
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4));
     padding: 0;
     margin: 0;
+    margin-bottom: 15px;
     color: #ffffff;
 }
 
 .breadcrumb {
     box-shadow: none;
     padding: 0;
+    margin: 0;
     background: none;
 }
 
