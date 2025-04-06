@@ -227,8 +227,7 @@ button:disabled:hover {
     background: linear-gradient(320deg, #4b0082, #4b0082);
     position: relative;
     animation: slideDown 1s ease forwards;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 100px;
     padding: 0;
     margin: 0; /* Ensure no external margin */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
@@ -317,8 +316,7 @@ footer {
     margin-top: auto;
     font-size: 1rem;
     animation: slideUp 1.5s ease forwards;
-    border-top-left-radius: 20px 20px;
-	border-top-right-radius: 20px 20px;
+    border-radius: 100px;
 }
 
 .foottxt {
