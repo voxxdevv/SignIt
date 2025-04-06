@@ -21,4 +21,6 @@ A streamlined iOS IPA signer crafted by **Loud Monkey Designs™**, SignIt allow
 
 ---
 
-**Disclaimer:** SignIt is intended for personal, educational, or testing purposes only. Use responsibly.
+The content in this repository may not be copied or used without permission.
+
+Copyright © 2025 **SignIt**. All rights reserved. 
