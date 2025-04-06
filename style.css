@@ -61,13 +61,6 @@ a:hover {
 }
 
 .breadcrumb p {
-    font-size: 75%;
-    text-transform: uppercase;
-    background: linear-gradient(-95deg, #4b0082, #6a5acd);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
     text-shadow: none;
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4));
     padding: 0;
@@ -75,18 +68,9 @@ a:hover {
 }
 
 .breadcrumb {
-    display: inline-block;
-    background-color: #ffffff;
-    border: none;
-    font-weight: bold;
-    border-radius: 100px;
-    text-decoration: none;
-    padding: 0 5px;
-    margin-top: 0;
-    margin-bottom: 15px;
-    cursor: pointer;
-    transition: transform 0.3s ease, background 0.3s ease, filter 0.3s ease;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: none;
+    padding: 0;
+    background: none;
 }
 
 /* Header Styles */
