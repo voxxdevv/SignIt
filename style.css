@@ -322,6 +322,7 @@ button:disabled:hover {
     color: #ffffff;
     transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease;
     animation: float 6s ease-in-out infinite;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }
 
 /* When hovering over the button */
