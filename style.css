@@ -188,10 +188,16 @@ input {
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
+button:hover {
+    outline: none;
+    transform: scale(0.95);
+    filter: brightness(1.1);
+}
+
 input:focus {
     outline: none;
-    border: 1px solid #ffffff;
-    box-shadow: 0 0 10px #ffffff;
+    transform: scale(0.95);
+    filter: brightness(1.1);
 }
 
 input:disabled {
@@ -223,7 +229,7 @@ button {
 }
 
 button:hover {
-    transform: scale(1.05);
+    transform: scale(0.95);
     filter: brightness(1.1);
 }
 
@@ -320,15 +326,15 @@ button:disabled:hover {
     cursor: pointer;
     font-size: 2.5rem;
     color: #ffffff;
-    transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease, text-shadow 0.3s ease;
     animation: float 6s ease-in-out infinite;
-    text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
-    box-shadow: none;
-}
+    border: 1px solid #ffffff;
+    text-shadow: 0 0 10px #ffffff;}
 
 /* When hovering over the button */
 .down-arrow-button:hover {
-    transform: scale(1.05);
+    transform: scale(0.95);
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }
 
 /* Footer Styles */
