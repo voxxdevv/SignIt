@@ -311,25 +311,22 @@ button:disabled:hover {
 
 /* Down Arrow Button */
 .down-arrow-button {
-    border-radius: 50%;
-    height: 70px;
-    width: 70px;
     align-items: center;
     justify-content: center;
     margin: 0 15px;
+    padding: 0px;
     border: none;
-    background: linear-gradient(320deg, #4b0082, #6a5acd);
+    background: none;
     cursor: pointer;
     font-size: 2.5rem;
     color: #ffffff;
-    transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease, filter 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease;
     animation: float 6s ease-in-out infinite;
 }
 
 /* When hovering over the button */
 .down-arrow-button:hover {
     transform: scale(1.05);
-    filter: brightness(1.1);
 }
 
 /* Footer Styles */
