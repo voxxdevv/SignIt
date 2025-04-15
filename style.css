@@ -194,15 +194,19 @@ input:hover {
 }
 
 input:active {
+    background: none;
     outline: none;
     transform: scale(0.95);
     filter: brightness(1.1);
+    border-bottom: 1px solid #ffffff;
 }
 
 input:focus {
+    background: none;
     outline: none;
     transform: scale(0.95);
     filter: brightness(1.1);
+    border-bottom: 1px solid #ffffff;
 }
 
 input:disabled {
@@ -238,6 +242,11 @@ button:hover {
 }
 
 button:active {
+    transform: scale(0.95);
+    filter: brightness(1.1);
+}
+
+button:focus {
     transform: scale(0.95);
     filter: brightness(1.1);
 }
