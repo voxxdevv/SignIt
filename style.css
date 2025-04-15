@@ -311,9 +311,9 @@ button:disabled:hover {
 
 /* Down Arrow Button */
 .down-arrow-button {
-    border-radius: 25px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
     margin: 0 15px;
     border: none;
     background: linear-gradient(320deg, #4b0082, #6a5acd);
@@ -326,7 +326,7 @@ button:disabled:hover {
 
 /* When hovering over the button */
 .down-arrow-button:hover {
-    transform: scale(0.95);
+    transform: scale(1.05);
     filter: brightness(1.1);
 }
 
