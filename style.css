@@ -126,6 +126,8 @@ main {
 }
 
 .main {
+    display: flex; /* Added for flexbox support */
+    flex-direction: column; /* Added for vertical alignment */
     margin: auto;
     padding: 15px;
     animation: slideIn 1.2s ease forwards;
