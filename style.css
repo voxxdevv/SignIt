@@ -194,6 +194,9 @@ input:hover {
 }
 
 input:active {
+    border-radius: none;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     background: none;
     outline: none;
     transform: scale(0.95);
@@ -202,6 +205,9 @@ input:active {
 }
 
 input:focus {
+    border-radius: none;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     background: none;
     outline: none;
     transform: scale(0.95);
