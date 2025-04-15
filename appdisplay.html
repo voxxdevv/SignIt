@@ -13,35 +13,19 @@
     <link rel="manifest" href="/appico/site.webmanifest">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7eb79cf2e3.js" crossorigin="anonymous"></script>
-    
-        <script>
-        // Check if the app is opened as a web clip (standalone mode)
-        if (!window.navigator.standalone) {
-            // If not in standalone mode, redirect to another page (e.g., a browser warning page)
-            window.location.href = "/unsupported"; // Modify this URL to your desired redirection
-        }
-    </script>
-    
 </head>
-<body>
-    <header style="margin-bottom: 0px">
-        <div class="header-content">
-            <img class="logo" src="src/whitelogo.png">
-            <h1 class="name">SignIt</h1>
-        </div>
-    </header>
+<body class="body">
 
     <!-- Container where the SignIt content will be injected -->
     <div id="appContainer"></div>
 
-    <!-- Footer Section -->
-    <footer>
+<footer>
                                                 <h1 class="breadcrumb"><i class="fa-solid fa-mobile-screen-button"></i></h1>
-                        
                     <p class="foottxt" style="margin-bottom: 0px;">Report a problem by clicking <a href="http://forms.gle/yk6g9SmfjwzvSPpN8" target="_blank">here <i class="fa-solid fa-link"></i></a>.</p>
         <p class="foottxt" style="margin-top: 15px;">Copyright &copy; <script>document.write(new Date().getFullYear());</script>, <b>SignIt</b>. All rights reserved.</p>
-    </footer>
-    
+</footer>
+
+
     <script src="maindisplay.js" defer></script>
     <script src="script.js" defer></script>
     
