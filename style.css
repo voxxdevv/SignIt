@@ -189,14 +189,15 @@ input {
 }
 
 input:hover {
-    outline: none;
     transform: scale(0.95);
 }
 
-input:active {
-    outline: none;
-    filter: brightness(1.25);
+input:focus {
     transform: scale(1.00);
+}
+
+input:active {
+    filter: brightness(1.25);
 }
 
 input:disabled {
@@ -231,9 +232,12 @@ button:hover {
     transform: scale(0.95);
 }
 
-button:active {
-    filter: brightness(1.25);
+button:focus {
     transform: scale(1.00);
+}
+
+buttom:active {
+    filter: brightness(1.25);
 }
 
 button:disabled {
