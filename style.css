@@ -126,9 +126,7 @@ main {
 }
 
 .main {
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0 auto;
+    margin: auto;
     padding: 15px;
     animation: slideIn 1.2s ease forwards;
 }
