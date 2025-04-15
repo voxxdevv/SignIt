@@ -64,7 +64,7 @@ box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
 a:hover {
     background: linear-gradient(350deg, #4b0082, #6a5acd);
     text-decoration: underline;
-    transform: scale(1.05);
+    transform: scale(0.95);
     filter: brightness(1.1);
 }
 
