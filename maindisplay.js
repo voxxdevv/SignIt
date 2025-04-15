@@ -2,8 +2,14 @@
 const signItHTML = `
 <div class="main">
 <div class="main-centered">
+    <header style="margin-bottom: 0px">
+        <div class="header-content">
+            <img class="logo" src="src/whitelogo.png">
+            <h1 class="name">SignIt</h1>
+        </div>
+    </header>
         <section style="margin-top: 0px; margin-bottom: 0px;">
-            <h2 style="margin-top: auto; margin-bottom: 15px;">Link To Your IPA File & Certificate Information <i class="fa-solid fa-circle-chevron-down"></i></h2>
+            <h2 style="margin-top: 0px; margin-bottom: 15px;">Link To Your IPA File & Certificate Information <i class="fa-solid fa-circle-chevron-down"></i></h2>
 <hr style="width: 10%; margin: 0 auto;">
 <input style="margin-top: 15px;margin-bottom: 15px;" type="text" id="urlInput" placeholder="Enter IPA file link here...">
 <input style="margin-top: 0px;margin-bottom: 0px;" type="text" id="certp12Input" placeholder="Enter P12 file link here...">
