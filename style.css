@@ -126,10 +126,13 @@ main {
 }
 
 .main {
-  display: flex;
-  justify-content: center; /* horizontal centering */
-  align-items: center;     /* vertical centering */
-  height: 100vh;           /* full height of viewport */
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    align-items: center;     /* vertical centering */
+    height: 100%;
+    margin: 0;
+    padding: 15px;
+    animation: slideIn 1.2s ease forwards;
 }
 
 .main-centered {
