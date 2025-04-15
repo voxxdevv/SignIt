@@ -126,11 +126,11 @@ main {
 }
 
 .main {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0;
     padding: 15px;
     animation: slideIn 1.2s ease forwards;
 }
