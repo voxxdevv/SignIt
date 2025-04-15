@@ -128,9 +128,8 @@ main {
 .main {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    margin: 0;
+    transform: translateY(-50%);
+    margin: 0 auto;
     padding: 15px;
     animation: slideIn 1.2s ease forwards;
 }
