@@ -28,9 +28,9 @@ This is </span>SignIt<span style="color: #aaa; font-weight: 100; margin: 0;">.</
 </div>
     <div class="down-arrow-wrapper">
 <!-- Down Arrow Button -->
-<button class="down-arrow-button" onclick="scrollToMain()">
+<h1 class="down-arrow-button" onclick="scrollToMain()">
     <i class="fa-solid fa-angles-down"></i>
-</button>
+</h1>
 </div>
 </div>
 
@@ -80,10 +80,8 @@ This is </span>SignIt<span style="color: #aaa; font-weight: 100; margin: 0;">.</
                 </button>
             </form>
         </section>
-
-    </main>
-
         <hr style="margin-top: 0px;margin-bottom: 0px;">
+    </main>
             
     <!-- Footer Section -->
     <footer>
@@ -114,7 +112,7 @@ window.addEventListener("scroll", function() {
     // If scrolling up, increase opacity and restart pulsating animation
     if (scrollY < lastScrollY) {
         downArrowButton.style.opacity = Math.min(opacity + 0.2, 1); // Gradually increase opacity when scrolling up
-        downArrowButton.style.animation = "pulse 2s infinite ease"; // Restart pulsating animation
+        downArrowButton.style.animation = "float 6s ease-in-out infinite"; // Restart float animation
     }
 
     // Update last scroll position
