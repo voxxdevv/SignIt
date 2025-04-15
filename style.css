@@ -195,7 +195,6 @@ input:hover {
 
 input:focus {
     outline: none;
-    transform: scale(1.00);
     filter: brightness(1.25);
 }
 
@@ -221,7 +220,7 @@ button {
     padding: 15px 15px;
     font-size: 1rem;
     cursor: pointer;
-    transition: transform 0.3s ease, background 0.3s ease, filter 0.3s ease;
+    transition: all 0.3s ease;
     width: 100%;
     margin-top: 15px;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -232,7 +231,6 @@ button:hover {
 }
 
 button:focus {
-    transform: scale(1.00);
     filter: brightness(1.25);
 }
 
