@@ -125,6 +125,20 @@ main {
     animation: slideIn 1.2s ease forwards;
 }
 
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 15px;
+    animation: slideIn 1.2s ease forwards;
+}
+
+.main-centered {
+    width: 100px;
+    height: 100px;
+}
+
 .info {
     font-size: 1rem;
     margin-top: 0px;
