@@ -328,8 +328,8 @@ button:disabled:hover {
     color: #ffffff;
     transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease, text-shadow 0.3s ease;
     animation: float 6s ease-in-out infinite;
-    border: 1px solid #ffffff;
-    text-shadow: 0 0 10px #ffffff;}
+    text-shadow: 0 0 10px #ffffff;
+}
 
 /* When hovering over the button */
 .down-arrow-button:hover {
