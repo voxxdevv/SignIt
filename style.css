@@ -199,12 +199,6 @@ input:active {
     filter: brightness(1.25);
 }
 
-input:focus {
-    outline: none;
-    transform: scale(1.00);
-    filter: brightness(1.25);
-}
-
 input:disabled {
     color: #aaa;
 background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
@@ -238,11 +232,6 @@ button:hover {
 }
 
 button:active {
-    transform: scale(1.00);
-    filter: brightness(1.25);
-}
-
-button:focus {
     transform: scale(1.00);
     filter: brightness(1.25);
 }
