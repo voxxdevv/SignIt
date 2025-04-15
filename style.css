@@ -197,14 +197,12 @@ input:active {
     outline: none;
     transform: scale(1.00);
     filter: brightness(1.1);
-    border-bottom: 1px solid #ffffff;
 }
 
 input:focus {
     outline: none;
     transform: scale(1.00);
     filter: brightness(1.1);
-    border-bottom: 1px solid #ffffff;
 }
 
 input:disabled {
