@@ -173,15 +173,15 @@ p { font-size: 1rem; }
 /* Input Styles */
 input {
     display: inline-block;
-    padding: 15px;
-    font-size: 1rem;
-    border-radius: 25px;
-    width: 100%;
-    transition: all 0.3s ease;
-    color: #ffffff;;
-    backdrop-filter: blur(10px);
     background: #4b0082;
+    color: #ffffff;
     border: none;
+    border-radius: 25px;
+    padding: 15px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
