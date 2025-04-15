@@ -231,7 +231,7 @@ button:hover {
     transform: scale(0.95);
 }
 
-button:active {
+button:focus {
     transform: scale(1.00);
     filter: brightness(1.25);
 }
