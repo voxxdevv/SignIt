@@ -121,6 +121,12 @@ box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
 /* Main Styles */
 main {
     margin: 0 auto;
+    padding: 15px;
+    animation: slideIn 1.2s ease forwards;
+}
+
+.main {
+    margin: 0 auto;
     position: absolute;
     padding: 15px;
     animation: slideIn 1.2s ease forwards;
