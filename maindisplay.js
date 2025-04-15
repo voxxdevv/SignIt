@@ -2,7 +2,7 @@
 const signItHTML = `
 <div class="main">
 <div class="main-centered">
-    <header style="margin-bottom: -15px;">
+    <header style="margin-bottom: 0px;">
         <div class="header-content">
             <img class="logo" src="src/whitelogo.png">
             <h1 class="name">SignIt</h1>
