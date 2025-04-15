@@ -126,19 +126,16 @@ main {
 }
 
 .main {
+    height: 100%;
     margin: 0 auto;
-    position: absolute;
     padding: 15px;
     animation: slideIn 1.2s ease forwards;
 }
 
 .center {
-    padding: 0;
-    margin: 0;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .info {
