@@ -194,23 +194,15 @@ input:hover {
 }
 
 input:active {
-    border-radius: none;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    background: none;
     outline: none;
-    transform: scale(0.95);
+    transform: scale(1.00);
     filter: brightness(1.1);
     border-bottom: 1px solid #ffffff;
 }
 
 input:focus {
-    border-radius: none;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    background: none;
     outline: none;
-    transform: scale(0.95);
+    transform: scale(1.00);
     filter: brightness(1.1);
     border-bottom: 1px solid #ffffff;
 }
@@ -248,12 +240,12 @@ button:hover {
 }
 
 button:active {
-    transform: scale(0.95);
+    transform: scale(1.00);
     filter: brightness(1.1);
 }
 
 button:focus {
-    transform: scale(0.95);
+    transform: scale(1.00);
     filter: brightness(1.1);
 }
 
