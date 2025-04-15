@@ -13,6 +13,15 @@
     <link rel="manifest" href="/appico/site.webmanifest">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7eb79cf2e3.js" crossorigin="anonymous"></script>
+
+        <script>
+        // Check if the app is opened as a web clip (standalone mode)
+        if (!window.navigator.standalone) {
+            // If not in standalone mode, redirect to another page (e.g., a browser warning page)
+            window.location.href = "/unsupported"; // Modify this URL to your desired redirection
+        }
+    </script>
+    
 </head>
 <body class="body">
 
