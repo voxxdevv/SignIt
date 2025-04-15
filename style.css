@@ -190,8 +190,8 @@ input {
 
 input:focus {
     outline: none;
-    border-color: #00c9ff;
-    box-shadow: 0 0 10px #00c9ff;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 10px #ffffff;
 }
 
 input:disabled {
