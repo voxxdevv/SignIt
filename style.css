@@ -328,7 +328,6 @@ button:disabled:hover {
 
 /* Footer Styles */
 footer {
-    display: inline-block;
     text-align: center;
     background: none;
     margin: 0 auto;
