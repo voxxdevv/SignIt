@@ -19,8 +19,8 @@ A streamlined iOS IPA signer crafted by **Loud Monkey Designs™**, SignIt allow
 
 - **Various Usage Options**  
   Use SignIt by:
-  - Installing the iOS app via configuration profile  
-  - Visiting directly through the web
+  - Installing the iOS app via configuration profile.
+  - Visiting directly through the web.
 ---
 The content in this repository may not be copied or used without permission.
 
