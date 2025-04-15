@@ -326,7 +326,7 @@ button:disabled:hover {
 
 /* When hovering over the button */
 .down-arrow-button:hover {
-    transform: scale(0.05);
+    transform: scale(0.95);
     filter: brightness(1.1);
 }
 
