@@ -127,15 +127,12 @@ main {
 
 .main {
     height: 100%;
-    margin: 0 auto;
-    padding: 15px;
-    animation: slideIn 1.2s ease forwards;
-}
-
-.center {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
+    padding: 15px;
+    animation: slideIn 1.2s ease forwards;
 }
 
 .info {
