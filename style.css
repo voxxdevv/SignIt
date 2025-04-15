@@ -65,7 +65,7 @@ a:hover {
     background: linear-gradient(350deg, #4b0082, #6a5acd);
     text-decoration: underline;
     transform: scale(0.95);
-    filter: brightness(1.5);
+    filter: brightness(1.25);
 }
 
 .breadcrumb {
@@ -196,13 +196,13 @@ input:hover {
 input:active {
     outline: none;
     transform: scale(1.00);
-    filter: brightness(1.5);
+    filter: brightness(1.25);
 }
 
 input:focus {
     outline: none;
     transform: scale(1.00);
-    filter: brightness(1.5);
+    filter: brightness(1.25);
 }
 
 input:disabled {
@@ -239,12 +239,12 @@ button:hover {
 
 button:active {
     transform: scale(1.00);
-    filter: brightness(1.5);
+    filter: brightness(1.25);
 }
 
 button:focus {
     transform: scale(1.00);
-    filter: brightness(1.5);
+    filter: brightness(1.25);
 }
 
 button:disabled {
