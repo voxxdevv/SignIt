@@ -320,13 +320,14 @@ button:disabled:hover {
     cursor: pointer;
     font-size: 2.5rem;
     color: #ffffff;
-    transition: opacity 0.2s ease;
-    animation: bounce 5s infinite ease;
+    transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease, filter 0.3s ease;
+    animation: float 6s ease-in-out infinite;
 }
 
 /* When hovering over the button */
 .down-arrow-button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    filter: brightness(1.1);
 }
 
 /* Footer Styles */
@@ -397,20 +398,17 @@ footer {
     to { transform: scale(1); opacity: 1; }
 }
 
-@-webkit-keyframes bounce {
-        0% {
-    transform: scale(1,1) translate(0px, 0px);
-  }
-  
-  30%{
-    transform: scale(1,0.8) translate(0px, 10px); 
-  }
-
-  75%{
-    transform: scale(1,1.1) translate(0px, -25px); 
-  }
-  
- 100% {
-    transform: scale(1,1) translate(0px, 0px);
-  }
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
