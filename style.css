@@ -28,7 +28,7 @@ body, input, button, a {
 
 /* Styled Horizontal Rule */
 hr {
-    width: 90%;
+    width: 100%;
     border-top: none;
     border: 1px solid #4b0082;
     border-radius: 25px;
@@ -136,7 +136,7 @@ main {
     padding: 15px 0;
     animation: slideUp 1.5s ease forwards;
     border-radius: 25px;
-    max-width: 480px
+    max-width: 480px;
 }
 
 .main-centered {
@@ -178,7 +178,7 @@ input {
     background: #4b0082;
     border: none;
     border-radius: 25px;
-    width: 90%;
+    width: 100%;
     transition: all 0.3s ease;
     color: #ffffff;;
     backdrop-filter: blur(10px);
@@ -215,7 +215,7 @@ button {
     font-size: 1rem;
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease, filter 0.3s ease;
-    width: 50%;
+    width: 100%;
     margin-top: 15px;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
 }
@@ -400,11 +400,4 @@ footer {
     0% { transform: scale(1); }
     50% { transform: scale(1.1); }
     100% { transform: scale(1); }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    h1 { font-size: 2rem; }
-    input { width: 80%; }
-    button { width: 80%; }
 }
