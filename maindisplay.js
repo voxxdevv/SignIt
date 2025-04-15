@@ -8,6 +8,7 @@ const signItHTML = `
             <h1 class="name">SignIt</h1>
         </div>
     </header>
+    <hr style="margin-bottom: 15px; margin-top: 15px;">
         <section style="margin-top: 0px; margin-bottom: 0px;">
             <h2 style="margin-top: 0px; margin-bottom: 15px;">Link To Your IPA File & Certificate Information <i class="fa-solid fa-circle-chevron-down"></i></h2>
 <hr style="width: 10%; margin: 0 auto;">
@@ -16,7 +17,7 @@ const signItHTML = `
 <input style="margin-top: 15px;margin-bottom: 15px;" type="text" id="certpassInput" placeholder="Enter certificate password here...">
 <input style="margin-top: 0px;margin-bottom: 15px;" type="text" id="mobileprovisionInput" placeholder="Enter provisioning file link here...">
 
-            <button id="generateLinkButton" style="margin-top: 0px"; margin-bottom:0px;">Sign IPA File <i class="fa-solid fa-file-pen"></i></button>
+            <button id="generateLinkButton" style="margin-top: 0px"; margin-bottom:15px;">Sign IPA File <i class="fa-solid fa-file-pen"></i></button>
 <hr style="width: 10%; margin: 0 auto;">
 
 <p class="info" style="margin-top:15px; margin-bottom: 0px;">Your IPA file will be signed via the <a href="https://cococloud-signing.online" target="_blank">CocoCloud API <i class="fa-solid fa-link"></i></a>. For resources, check out <a href="https://nabzclan.vip/resources/" target="_blank">Nabzclans's Resources Page <i class="fa-solid fa-link"></i></a>. <i class="fa-solid fa-circle-info"></i></p>
