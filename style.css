@@ -321,7 +321,7 @@ button:disabled:hover {
     font-size: 2.5rem;
     color: #ffffff;
     transition: opacity 0.2s ease;
-    animation: pulse 2s infinite ease;
+    animation: bounce 5s infinite ease;
 }
 
 /* When hovering over the button */
@@ -397,9 +397,20 @@ footer {
     to { transform: scale(1); opacity: 1; }
 }
 
-/* Pulsing Animation */
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
+@-webkit-keyframes bounce {
+        0% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
+  
+  30%{
+    transform: scale(1,0.8) translate(0px, 10px); 
+  }
+
+  75%{
+    transform: scale(1,1.1) translate(0px, -25px); 
+  }
+  
+ 100% {
+    transform: scale(1,1) translate(0px, 0px);
+  }
 }
