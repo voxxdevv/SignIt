@@ -133,14 +133,14 @@ main {
     margin: 0;
     background: linear-gradient(320deg, #4b0082, #6a5acd);
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
-    padding: 15px 0;
+    padding: 15px 15px;
     animation: slideUp 1.5s ease forwards;
     border-radius: 25px;
     max-width: 480px;
 }
 
 .main-centered {
-  text-align: center;      /* optional: center inner text/content */
+  text-align: center;      /* center inner text/content */
 }
 
 .info {
@@ -172,7 +172,7 @@ p { font-size: 1rem; }
 
 /* Input Styles */
 input {
-    margin: 0 15px;
+    display: inline-block;
     padding: 15px;
     font-size: 1rem;
     border-radius: 25px;
@@ -180,7 +180,6 @@ input {
     transition: all 0.3s ease;
     color: #ffffff;;
     backdrop-filter: blur(10px);
-    display: inline-block;
     background: #4b0082;
     border: none;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
