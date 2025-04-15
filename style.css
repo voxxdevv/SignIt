@@ -193,7 +193,7 @@ input:hover {
     transform: scale(0.95);
 }
 
-input:active (
+input:active {
     outline: none;
     transform: scale(0.95);
     filter: brightness(1.1);
@@ -237,7 +237,7 @@ button:hover {
     transform: scale(0.95);
 }
 
-button:active (
+button:active {
     transform: scale(0.95);
     filter: brightness(1.1);
 }
