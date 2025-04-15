@@ -1,4 +1,8 @@
 /* General Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', system-ui, sans-serif;
     background: linear-gradient(320deg, #4b0082, #6a5acd);
@@ -179,7 +183,6 @@ input {
     border-radius: 25px;
     padding: 15px 15px;
     font-size: 1rem;
-    cursor: pointer;
     transition: all 0.3s ease;
     width: 100%;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
