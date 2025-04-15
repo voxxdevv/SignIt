@@ -188,7 +188,7 @@ input {
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
-button:hover {
+input:hover {
     outline: none;
     transform: scale(0.95);
     filter: brightness(1.1);
