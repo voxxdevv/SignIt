@@ -1,5 +1,6 @@
 // HTML content to be injected
 const signItHTML = `
+<div class="center">
     <main>
         <section style="margin-top: 0px; margin-bottom: 0px;">
             <h2 style="margin-top: auto; margin-bottom: 15px;">Link To Your IPA File & Certificate Information <i class="fa-solid fa-circle-chevron-down"></i></h2>
@@ -28,6 +29,7 @@ const signItHTML = `
            
         </section>
     </main>
+</div>
 `;
 
 // Function to insert HTML into an element with ID "appContainer"
