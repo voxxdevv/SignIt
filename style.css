@@ -18,6 +18,10 @@ body {
     text-size-adjust: none;
 }
 
+.body {
+    background: #4b0082;
+}
+
 body, input, button, a {
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }
@@ -69,15 +73,12 @@ a:hover {
 
 /* Header Styles */
 header {
-    background: #4b0082;
+    background: none;
     width: 100%;
     padding: 0;
-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
-    margin-bottom: 0px;
     margin: 0 auto;
     text-align: center;
     animation: slideDown 1s ease forwards;
-    border-radius: 25px;
 }
 
 /* Logo Styles */
@@ -100,7 +101,6 @@ box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
     padding: 0; /* Ensure no padding */
     width: 100%; /* Full width */
     margin: 0;
-    margin-top: 15px;
     margin-bottom: 15px;
 }
 
@@ -129,10 +129,13 @@ main {
     display: flex;
     justify-content: center; /* horizontal centering */
     align-items: center;     /* vertical centering */
-    height: 100vh;
+    height: 100%;
     margin: 0;
-    padding: 15px;
-    animation: slideIn 1.2s ease forwards;
+    background: linear-gradient(320deg, #4b0082, #6a5acd);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    padding: 15px 0;
+    animation: slideUp 1.5s ease forwards;
+    border-radius: 25px;
 }
 
 .main-centered {
@@ -202,7 +205,7 @@ input::placeholder {
 /* Button Styles */
 button {
     display: inline-block;
-    background: linear-gradient(90deg, #4b0082, #6a5acd);
+    background: #4b0082;
     color: #ffffff;
     font-weight: bold;
     border: none;
@@ -325,18 +328,16 @@ button:disabled:hover {
 /* Footer Styles */
 footer {
     text-align: center;
-    background: #4b0082;
+    background: none;
     margin: 0 auto;
     width: 100%;
     display: inline-block;
     align-items: center;
     justify-content: space-around;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
-    padding: 15px 0;
-    margin-top: auto;
+    padding: 0px;
+    margin-top: 15px;
     font-size: 1rem;
     animation: slideUp 1.5s ease forwards;
-    border-radius: 25px;
 }
 
 .foottxt {
