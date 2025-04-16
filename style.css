@@ -79,7 +79,7 @@ a:hover {
     border-radius: 0;
     text-decoration: none;
     padding: 0;
-    cursor: auto;
+    cursor: pointer;
     box-shadow: none;
     transition: none;
 }
@@ -87,7 +87,7 @@ a:hover {
 .sp-a:hover {
     transform: scale(0.95);
     text-decoration: underline;
-    filter: none;
+    filter: brightness(1.25);
     background: none;
 }
 
