@@ -81,7 +81,7 @@ a:hover {
     padding: 0;
     cursor: pointer;
     box-shadow: none;
-    transition: none;
+    transition: all 0.3 ease;
 }
 
 .sp-a:hover {
