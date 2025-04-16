@@ -4,7 +4,7 @@ const signItHTML = `
 <div class="main-centered">
     <header style="margin-bottom: 0px;">
         <div class="header-content">
-        <a class="sp-a" href="usesignit.netlify.app/">
+        <a class="sp-a" href="#">
             <img class="logo" src="src/whitelogo.png">
             <h1 class="name">SignIt</h1>
         </a>
