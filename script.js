@@ -46,3 +46,23 @@ function copyLink() {
         alert("No installation link found.");
     }
 }
+
+        // JavaScript to handle the page loader
+        window.addEventListener('load', function() {
+            const loader = document.getElementById('loader');
+            const content = document.getElementById('content');
+
+            // Simulate a minimum loading time (optional, for demo purposes)
+            setTimeout(() => {
+                // Hide loader
+                loader.classList.add('loader-hidden');
+                
+                // Show content
+                content.classList.add('content-loaded');
+
+                // Remove loader from DOM after transition
+                loader.addEventListener('transitionend', () => {
+                    loader.remove();
+                });
+            }, 1000); // Adjust delay as needed (1000ms = 1 second)
+        });
