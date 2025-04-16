@@ -68,6 +68,29 @@ a:hover {
     filter: brightness(1.25);
 }
 
+.sp-a {
+    display: inline;
+    font-size: 100%;
+    text-transform: none;
+    background: none;
+    color: inherit;
+    border: none;
+    font-weight: normal;
+    border-radius: 0;
+    text-decoration: none;
+    padding: 0;
+    cursor: auto;
+    box-shadow: none;
+    transition: none;
+}
+
+.sp-a:hover {
+    transform: scale(0.95);
+    text-decoration: underline;
+    filter: none;
+    background: none;
+
+
 .breadcrumb {
     padding: 0;
     margin: 0;
