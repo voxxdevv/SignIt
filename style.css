@@ -69,7 +69,7 @@ a:hover {
 }
 
 .sp-a {
-    display: inline;
+    display: inherit;
     font-size: 100%;
     text-transform: none;
     background: none;
@@ -130,6 +130,7 @@ header {
     width: 100%; /* Full width */
     margin: 0;
     margin-bottom: 15px;
+    transition: all 0.3s ease;
 }
 
 .name {
