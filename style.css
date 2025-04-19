@@ -337,7 +337,7 @@ button:disabled:hover {
 /* Down Arrow Button Wrapper */
 .down-arrow-wrapper {
     position: absolute;
-    bottom: 15px;
+    bottom: 0px;
     width: 100%;
     margin-top: 15px;
     display: flex;
